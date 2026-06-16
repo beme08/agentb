@@ -1,0 +1,24 @@
+{
+  "id": "stackoverflow-top-question",
+  "category": "developer",
+  "title": "Top voted Python question on Stack Overflow",
+  "difficulty": "easy",
+  "goal": "Find the highest-voted Python question on Stack Overflow and report its score and tags.",
+  "constraints": [
+    "Source: stackoverflow.com",
+    "Tag: python"
+  ],
+  "start_url": "https://stackoverflow.com/questions/tagged/python?sort=votes",
+  "expected_steps": [
+    "navigate SO",
+    "filter tag python",
+    "sort by votes",
+    "extract top question"
+  ],
+  "critical_actions": [
+    "stackoverflow.com",
+    "python",
+    "votes"
+  ],
+  "rubric": "Reports the top-voted Python SO question with score and tags."
+}

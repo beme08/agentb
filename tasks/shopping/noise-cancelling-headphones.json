@@ -1,0 +1,24 @@
+{
+  "id": "noise-cancelling-headphones",
+  "category": "shopping",
+  "title": "Best-rated noise-cancelling headphones under $300",
+  "difficulty": "medium",
+  "goal": "Find the highest-rated noise-cancelling wireless headphones under $300.",
+  "constraints": [
+    "Under $300",
+    "Active noise cancellation",
+    "Wireless"
+  ],
+  "start_url": "https://www.rtings.com/headphones/reviews/best/by-feature/active-noise-cancelling",
+  "expected_steps": [
+    "navigate RTINGS noise-cancelling list",
+    "apply price filter",
+    "extract top pick"
+  ],
+  "critical_actions": [
+    "rtings.com",
+    "noise-cancelling",
+    "wireless"
+  ],
+  "rubric": "Highest-rated ANC wireless headphones under $300 from a review site."
+}

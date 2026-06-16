@@ -1,0 +1,24 @@
+{
+  "id": "gmail-unsubscribe",
+  "category": "productivity",
+  "title": "Unsubscribe from marketing emails in Gmail",
+  "difficulty": "medium",
+  "goal": "Find a marketing email in Gmail from the last 7 days and unsubscribe.",
+  "constraints": [
+    "Use Gmail",
+    "Action: unsubscribe (do not just delete)"
+  ],
+  "start_url": "https://mail.google.com",
+  "expected_steps": [
+    "navigate Gmail",
+    "search category:promotions",
+    "open email",
+    "click unsubscribe",
+    "confirm"
+  ],
+  "critical_actions": [
+    "mail.google.com",
+    "unsubscribe"
+  ],
+  "rubric": "Confirms an unsubscribe was performed (not just delete) on a marketing email."
+}

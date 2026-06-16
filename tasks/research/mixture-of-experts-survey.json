@@ -1,0 +1,25 @@
+{
+  "id": "mixture-of-experts-survey",
+  "category": "research",
+  "title": "Recent Mixture-of-Experts survey",
+  "difficulty": "hard",
+  "goal": "Find a 2023 or 2024 survey paper on Mixture-of-Experts (MoE) and list its main sections.",
+  "constraints": [
+    "Source: arXiv or major ML conference",
+    "Published 2023+"
+  ],
+  "start_url": "https://arxiv.org/search/?query=mixture+of+experts+survey&start=0",
+  "expected_steps": [
+    "navigate arXiv",
+    "search MoE survey",
+    "open survey",
+    "extract section headings"
+  ],
+  "critical_actions": [
+    "arxiv.org",
+    "mixture",
+    "experts",
+    "survey"
+  ],
+  "rubric": "Identifies a real MoE survey paper and lists its main sections."
+}

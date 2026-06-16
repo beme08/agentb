@@ -1,0 +1,23 @@
+{
+  "id": "average-coffee-price",
+  "category": "search",
+  "title": "Average price of a latte in NYC",
+  "difficulty": "medium",
+  "goal": "Find the average price of a regular latte at a coffee shop in New York City.",
+  "constraints": [
+    "Cite the source (Numbeo, survey, article)",
+    "Report price in USD"
+  ],
+  "start_url": "https://www.numbeo.com/cost-of-living/in/New-York",
+  "expected_steps": [
+    "navigate Numbeo NYC",
+    "search coffee/latte price",
+    "extract average"
+  ],
+  "critical_actions": [
+    "numbeo.com",
+    "latte",
+    "new york"
+  ],
+  "rubric": "Reports NYC latte average in USD with a source."
+}

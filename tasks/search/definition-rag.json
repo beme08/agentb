@@ -1,0 +1,23 @@
+{
+  "id": "definition-rag",
+  "category": "search",
+  "title": "Definition of RAG in AI",
+  "difficulty": "medium",
+  "goal": "Find a clear, sourced definition of Retrieval-Augmented Generation (RAG).",
+  "constraints": [
+    "Definition must come from an authoritative source (paper, vendor doc, or Wikipedia)"
+  ],
+  "start_url": "https://en.wikipedia.org/wiki/Retrieval-augmented_generation",
+  "expected_steps": [
+    "navigate Wikipedia",
+    "extract RAG definition",
+    "cite original paper if available"
+  ],
+  "critical_actions": [
+    "wikipedia.org",
+    "retrieval",
+    "augmented",
+    "generation"
+  ],
+  "rubric": "Quotes or paraphrases a clear RAG definition and cites the source."
+}

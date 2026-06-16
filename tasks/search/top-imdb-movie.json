@@ -1,0 +1,22 @@
+{
+  "id": "top-imdb-movie",
+  "category": "search",
+  "title": "Top-rated movie on IMDb",
+  "difficulty": "easy",
+  "goal": "Find the current #1 movie on the IMDb Top 250 list.",
+  "constraints": [
+    "Source must be imdb.com",
+    "Report title, year, rating"
+  ],
+  "start_url": "https://www.imdb.com/chart/top/",
+  "expected_steps": [
+    "navigate IMDb top 250",
+    "extract #1 entry",
+    "note rating and year"
+  ],
+  "critical_actions": [
+    "imdb.com",
+    "top"
+  ],
+  "rubric": "Reports current #1 IMDb Top 250 movie with year and rating."
+}

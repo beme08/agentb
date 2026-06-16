@@ -1,0 +1,25 @@
+{
+  "id": "gift-under-50-mom",
+  "category": "shopping",
+  "title": "Birthday gift under $50 for mom",
+  "difficulty": "medium",
+  "goal": "Find a thoughtful birthday gift for a mother who enjoys gardening, under $50.",
+  "constraints": [
+    "Under $50",
+    "Garden-themed",
+    "Ships in 2 days or less"
+  ],
+  "start_url": "https://www.amazon.com/s?k=gardening+gift+for+mother",
+  "expected_steps": [
+    "navigate Amazon",
+    "search gardening gift for mom",
+    "apply price and shipping filters",
+    "extract product"
+  ],
+  "critical_actions": [
+    "amazon.com",
+    "garden",
+    "mother"
+  ],
+  "rubric": "Real garden-themed gift for a mother under $50 with fast shipping."
+}

@@ -1,0 +1,22 @@
+{
+  "id": "hubble-telescope-launch",
+  "category": "search",
+  "title": "When was the Hubble Space Telescope launched?",
+  "difficulty": "easy",
+  "goal": "Find the launch date of the Hubble Space Telescope.",
+  "constraints": [
+    "Source must be NASA.gov or Wikipedia"
+  ],
+  "start_url": "https://en.wikipedia.org/wiki/Hubble_Space_Telescope",
+  "expected_steps": [
+    "navigate Wikipedia",
+    "extract launch date",
+    "note mission name"
+  ],
+  "critical_actions": [
+    "wikipedia.org",
+    "1990",
+    "hubble"
+  ],
+  "rubric": "Reports the Hubble launch date (1990-04-24) with a source."
+}

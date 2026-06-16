@@ -1,0 +1,38 @@
+{
+  "id": "three-asr-low-resource-papers",
+  "category": "research",
+  "title": "Three recent ASR papers for low-resource languages",
+  "difficulty": "medium",
+  "goal": "Find three recent papers about speech recognition for low-resource languages and summarize their contributions.",
+  "constraints": [
+    "Papers must be published in 2024 or later",
+    "Topic: ASR (automatic speech recognition)",
+    "Domain: low-resource languages",
+    "Each summary must mention the core contribution"
+  ],
+  "start_url": "https://arxiv.org/list/cs.CL/2024",
+  "expected_steps": [
+    "navigate arxiv",
+    "search automatic speech recognition low-resource",
+    "open first paper",
+    "extract abstract",
+    "open second paper",
+    "extract abstract",
+    "open third paper",
+    "extract abstract",
+    "summarize contributions"
+  ],
+  "critical_actions": [
+    "arxiv.org",
+    "low-resource",
+    "speech recognition",
+    "abstract"
+  ],
+  "final_answer": "1. wav2vec-U 2.0 (2024) - unsupervised ASR for unwritten languages. 2. Whisper-Low (2024) - distillation pipeline for under-represented languages. 3. SSL-Adapt (2024) - self-supervised transfer for 50+ African languages.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": ["wav2vec", "whisper", "2024"]
+  },
+  "rubric": "Three distinct ASR papers, all 2024+, with one-sentence summaries of the core contribution each.",
+  "notes": "Reference list is illustrative. Grader checks for 2024 + at least one recognized low-resource ASR paper."
+}

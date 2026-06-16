@@ -1,0 +1,8 @@
+# Core
+pytest>=7.0
+
+# Agents (install only the ones you need)
+# browser-use
+# playwright>=1.40
+# openai>=1.0
+# langchain-openai>=0.1

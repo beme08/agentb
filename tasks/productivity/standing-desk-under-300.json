@@ -1,0 +1,30 @@
+{
+  "id": "standing-desk-under-300",
+  "category": "productivity",
+  "title": "Standing desk converter under $300",
+  "difficulty": "medium",
+  "goal": "Find a standing desk converter (sits on top of an existing desk) priced under $300 with at least 4.5 stars.",
+  "constraints": [
+    "Under $300",
+    "Sits on a desk (converter, not full desk)",
+    "At least 4.5 star average rating",
+    "Ships in 2 days or less"
+  ],
+  "start_url": "https://www.amazon.com/s?k=standing+desk+converter",
+  "expected_steps": [
+    "navigate Amazon",
+    "search standing desk converter",
+    "apply price and rating filters",
+    "open top product",
+    "verify rating and price",
+    "extract product"
+  ],
+  "critical_actions": [
+    "amazon.com",
+    "standing desk",
+    "converter",
+    "rating"
+  ],
+  "rubric": "Real standing desk converter under $300 with 4.5+ star average.",
+  "notes": "Example: Vari Electric Standing Desk Converter. Any product meeting all constraints passes."
+}

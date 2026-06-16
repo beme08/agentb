@@ -1,0 +1,22 @@
+{
+  "id": "rest-api-design",
+  "category": "developer",
+  "title": "Find the canonical REST endpoint to list GitHub repos for a user",
+  "difficulty": "medium",
+  "goal": "Report the correct GitHub REST API endpoint and HTTP verb to list public repositories for a given user.",
+  "constraints": [
+    "Source: docs.github.com"
+  ],
+  "start_url": "https://docs.github.com/en/rest/repos/repos",
+  "expected_steps": [
+    "navigate GitHub REST docs",
+    "find list-user-repos endpoint",
+    "extract verb and path"
+  ],
+  "critical_actions": [
+    "docs.github.com",
+    "GET",
+    "/users/{username}/repos"
+  ],
+  "rubric": "Reports `GET /users/{username}/repos` from docs.github.com."
+}

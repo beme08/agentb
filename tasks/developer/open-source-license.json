@@ -1,0 +1,22 @@
+{
+  "id": "open-source-license",
+  "category": "developer",
+  "title": "License of a popular repo",
+  "difficulty": "easy",
+  "goal": "Identify the license of the microsoft/TypeScript repository.",
+  "constraints": [
+    "Source: github.com/microsoft/TypeScript/blob/main/LICENSE"
+  ],
+  "start_url": "https://github.com/microsoft/TypeScript",
+  "expected_steps": [
+    "navigate repo",
+    "open LICENSE file",
+    "extract license name"
+  ],
+  "critical_actions": [
+    "github.com",
+    "microsoft/typescript",
+    "apache"
+  ],
+  "rubric": "Reports the Apache-2.0 license from the TypeScript LICENSE file."
+}

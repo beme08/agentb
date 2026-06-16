@@ -1,0 +1,22 @@
+{
+  "id": "agentbench-related",
+  "category": "research",
+  "title": "Find AgentBench paper",
+  "difficulty": "medium",
+  "goal": "Find the AgentBench paper and summarize its evaluation categories.",
+  "constraints": [
+    "Source: arXiv"
+  ],
+  "start_url": "https://arxiv.org/abs/2308.03688",
+  "expected_steps": [
+    "navigate arXiv",
+    "open AgentBench",
+    "list evaluation categories"
+  ],
+  "critical_actions": [
+    "arxiv.org",
+    "2308.03688",
+    "agentbench"
+  ],
+  "rubric": "Lists AgentBench evaluation categories (web, code, game, etc.)."
+}

@@ -1,0 +1,24 @@
+{
+  "id": "crash-interpretation",
+  "category": "developer",
+  "title": "Interpret a Python traceback",
+  "difficulty": "medium",
+  "goal": "Given the traceback `NameError: name 'x' is not defined` occurring at line 5 of a script, propose the most likely cause and a fix.",
+  "constraints": [
+    "Diagnose the error",
+    "Suggest a fix",
+    "Cite Python docs"
+  ],
+  "start_url": "https://docs.python.org/3/tutorial/errors.html",
+  "expected_steps": [
+    "navigate Python errors tutorial",
+    "find NameError section",
+    "draft fix"
+  ],
+  "critical_actions": [
+    "docs.python.org",
+    "nameerror",
+    "defined"
+  ],
+  "rubric": "Diagnoses NameError as a missing definition/typo and suggests defining the name before use."
+}

@@ -1,0 +1,25 @@
+{
+  "id": "find-bug-in-snippet",
+  "category": "developer",
+  "title": "Spot the bug in a Python snippet",
+  "difficulty": "medium",
+  "goal": "Read the following Python snippet and identify the bug: `def add(a, b): return a + b + 1`  -- but only when called with two strings. Identify what happens and suggest a fix.",
+  "constraints": [
+    "Identify the bug",
+    "Suggest a fix",
+    "Source can be any Python docs site"
+  ],
+  "start_url": "https://docs.python.org/3/library/stdtypes.html",
+  "expected_steps": [
+    "navigate Python docs",
+    "review str + int behavior",
+    "draft fix"
+  ],
+  "critical_actions": [
+    "docs.python.org",
+    "str",
+    "int",
+    "typeerror"
+  ],
+  "rubric": "Identifies that string + int raises TypeError and suggests explicit conversion or type check."
+}

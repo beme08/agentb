@@ -1,0 +1,23 @@
+{
+  "id": "git-clone-instructions",
+  "category": "developer",
+  "title": "Clone a public GitHub repo over HTTPS",
+  "difficulty": "easy",
+  "goal": "Report the HTTPS clone URL and the first three commands to clone and set up the openai/whisper repository.",
+  "constraints": [
+    "Source: github.com/openai/whisper"
+  ],
+  "start_url": "https://github.com/openai/whisper",
+  "expected_steps": [
+    "navigate repo",
+    "copy HTTPS URL",
+    "list first three setup steps from README"
+  ],
+  "critical_actions": [
+    "github.com",
+    "openai/whisper",
+    "git clone",
+    "pip install"
+  ],
+  "rubric": "Reports the correct clone URL and first three setup commands from the README."
+}

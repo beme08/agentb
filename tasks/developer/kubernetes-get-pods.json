@@ -1,0 +1,23 @@
+{
+  "id": "kubernetes-get-pods",
+  "category": "developer",
+  "title": "kubectl command to list pods in all namespaces",
+  "difficulty": "easy",
+  "goal": "Find the correct kubectl command to list all pods in all namespaces, with their node names.",
+  "constraints": [
+    "Source: kubernetes.io docs"
+  ],
+  "start_url": "https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#get",
+  "expected_steps": [
+    "navigate kubectl docs",
+    "find get pods command",
+    "note all-namespaces and -o wide"
+  ],
+  "critical_actions": [
+    "kubernetes.io",
+    "kubectl get pods",
+    "-A",
+    "-o wide"
+  ],
+  "rubric": "Reports `kubectl get pods -A -o wide` from the official kubectl docs."
+}

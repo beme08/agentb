@@ -1,0 +1,25 @@
+{
+  "id": "running-shoes-under-100",
+  "category": "shopping",
+  "title": "Running shoes under $100",
+  "difficulty": "easy",
+  "goal": "Find a pair of well-reviewed running shoes currently selling for under $100.",
+  "constraints": [
+    "Under $100",
+    "At least 4-star average",
+    "Available in standard US sizes"
+  ],
+  "start_url": "https://www.rei.com/c/running-shoes",
+  "expected_steps": [
+    "navigate REI running shoes",
+    "apply price filter",
+    "sort by rating",
+    "extract model and price"
+  ],
+  "critical_actions": [
+    "rei.com",
+    "running",
+    "rating"
+  ],
+  "rubric": "Real running shoes under $100 with a 4+ star rating from a major retailer."
+}

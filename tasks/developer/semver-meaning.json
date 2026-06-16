@@ -1,0 +1,22 @@
+{
+  "id": "semver-meaning",
+  "category": "developer",
+  "title": "Semver major vs minor vs patch",
+  "difficulty": "medium",
+  "goal": "Find a clear explanation of SemVer major/minor/patch increments from semver.org.",
+  "constraints": [
+    "Source: semver.org"
+  ],
+  "start_url": "https://semver.org/",
+  "expected_steps": [
+    "navigate semver.org",
+    "extract MAJOR.MINOR.PATCH rules"
+  ],
+  "critical_actions": [
+    "semver.org",
+    "major",
+    "minor",
+    "patch"
+  ],
+  "rubric": "Quotes or paraphrases the SemVer spec for major/minor/patch."
+}

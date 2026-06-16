@@ -1,0 +1,39 @@
+{
+  "id": "cheap-nonstop-nyc-london",
+  "category": "shopping",
+  "title": "Cheapest nonstop flight NYC to London",
+  "difficulty": "medium",
+  "goal": "Find the cheapest nonstop flight from NYC to London departing next Friday and returning Sunday.",
+  "constraints": [
+    "Nonstop only",
+    "Departure airport must be in NYC area (JFK, LGA, EWR)",
+    "Arrival must be in London (LHR, LGW, STN, LTN, LCY)",
+    "Outbound: next Friday",
+    "Return: following Sunday",
+    "Price reported within $20 of reference"
+  ],
+  "start_url": "https://www.google.com/travel/flights",
+  "expected_steps": [
+    "navigate Google Flights",
+    "search NYC to LON",
+    "filter nonstop",
+    "select departure next Friday",
+    "select return Sunday",
+    "sort by price",
+    "extract airline, times, price"
+  ],
+  "critical_actions": [
+    "google.com/travel/flights",
+    "nonstop",
+    "friday",
+    "sunday",
+    "sort by price"
+  ],
+  "final_answer": "JetBlue B6 120 JFK 21:30 -> LHR 09:10, $418 round trip",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": ["JFK", "LHR", "418"]
+  },
+  "rubric": "Cheapest nonstop JFK-LHR round-trip departing next Friday and returning Sunday, price within $20 of $418.",
+  "notes": "Reference answer is a snapshot. Real prices change; the rubric allows $20 drift."
+}

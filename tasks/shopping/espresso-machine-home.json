@@ -1,0 +1,25 @@
+{
+  "id": "espresso-machine-home",
+  "category": "shopping",
+  "title": "Home espresso machine under $500",
+  "difficulty": "medium",
+  "goal": "Find a well-reviewed home espresso machine under $500 that includes a milk steamer.",
+  "constraints": [
+    "Under $500",
+    "Milk steamer/frother included",
+    "At least 4-star average"
+  ],
+  "start_url": "https://www.amazon.com/s?k=espresso+machine",
+  "expected_steps": [
+    "navigate Amazon",
+    "apply price filter",
+    "search espresso with milk frother",
+    "extract top pick"
+  ],
+  "critical_actions": [
+    "amazon.com",
+    "espresso",
+    "frother"
+  ],
+  "rubric": "Real espresso machine under $500 with steam wand, 4+ stars."
+}

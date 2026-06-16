@@ -1,0 +1,26 @@
+{
+  "id": "pdf-compress-tool",
+  "category": "productivity",
+  "title": "Find a free online PDF compressor",
+  "difficulty": "easy",
+  "goal": "Find a free, reputable online tool that compresses PDFs without uploading to a server.",
+  "constraints": [
+    "Free",
+    "Local processing preferred",
+    "Source: review or trust list"
+  ],
+  "start_url": "https://www.reddit.com/r/productivity/search/?q=pdf+compress",
+  "expected_steps": [
+    "navigate Reddit",
+    "search pdf compress",
+    "open top recommendation",
+    "verify local processing"
+  ],
+  "critical_actions": [
+    "compress",
+    "pdf",
+    "local",
+    "free"
+  ],
+  "rubric": "Identifies a free, ideally local-processing PDF compression tool."
+}

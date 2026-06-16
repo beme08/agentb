@@ -1,0 +1,26 @@
+{
+  "id": "mechanical-keyboard-under-120",
+  "category": "shopping",
+  "title": "Mechanical keyboard under $120 with hot-swap and wireless",
+  "difficulty": "easy",
+  "goal": "Find a mechanical keyboard under $120 with hot-swappable switches and wireless support.",
+  "constraints": [
+    "Under $120",
+    "Hot-swappable",
+    "Wireless (BT or 2.4GHz)"
+  ],
+  "start_url": "https://www.amazon.com/s?k=mechanical+keyboard+hot+swap+wireless",
+  "expected_steps": [
+    "navigate Amazon",
+    "search mechanical keyboard hot swap wireless",
+    "apply price filter",
+    "verify specs on listing"
+  ],
+  "critical_actions": [
+    "amazon.com",
+    "hot-swap",
+    "wireless",
+    "$"
+  ],
+  "rubric": "Real in-stock mechanical keyboard under $120 with hot-swap + wireless."
+}

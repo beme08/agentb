@@ -1,0 +1,22 @@
+{
+  "id": "diffusion-models-history",
+  "category": "research",
+  "title": "Original DDPM paper",
+  "difficulty": "medium",
+  "goal": "Find the original Denoising Diffusion Probabilistic Models paper and report authors, year, and dataset used.",
+  "constraints": [
+    "Source must be arXiv or NeurIPS proceedings"
+  ],
+  "start_url": "https://arxiv.org/abs/2006.11239",
+  "expected_steps": [
+    "navigate arXiv",
+    "open paper",
+    "extract authors, year, dataset"
+  ],
+  "critical_actions": [
+    "arxiv.org",
+    "2006.11239",
+    "ho"
+  ],
+  "rubric": "Reports Ho et al. 2020 DDPM paper and the ImageNet/CIFAR datasets."
+}

@@ -1,0 +1,1477 @@
+[
+  {
+    "id": "crash-interpretation",
+    "category": "developer",
+    "title": "Interpret a Python traceback",
+    "difficulty": "medium",
+    "goal": "Given the traceback `NameError: name 'x' is not defined` occurring at line 5 of a script, propose the most likely cause and a fix.",
+    "constraints": [
+      "Diagnose the error",
+      "Suggest a fix",
+      "Cite Python docs"
+    ],
+    "start_url": "https://docs.python.org/3/tutorial/errors.html",
+    "expected_steps": [
+      "navigate Python errors tutorial",
+      "find NameError section",
+      "draft fix"
+    ],
+    "critical_actions": [
+      "docs.python.org",
+      "nameerror",
+      "defined"
+    ],
+    "rubric": "Diagnoses NameError as a missing definition/typo and suggests defining the name before use."
+  },
+  {
+    "id": "docker-hub-pull",
+    "category": "developer",
+    "title": "Docker pull command for postgres:16",
+    "difficulty": "easy",
+    "goal": "Find the official Docker pull command for the postgres:16 image from Docker Hub.",
+    "constraints": [
+      "Source: hub.docker.com"
+    ],
+    "start_url": "https://hub.docker.com/_/postgres",
+    "expected_steps": [
+      "navigate Docker Hub postgres",
+      "extract pull command"
+    ],
+    "critical_actions": [
+      "hub.docker.com",
+      "postgres",
+      "docker pull"
+    ],
+    "rubric": "Reports `docker pull postgres:16` from hub.docker.com."
+  },
+  {
+    "id": "find-bug-in-snippet",
+    "category": "developer",
+    "title": "Spot the bug in a Python snippet",
+    "difficulty": "medium",
+    "goal": "Read the following Python snippet and identify the bug: `def add(a, b): return a + b + 1`  -- but only when called with two strings. Identify what happens and suggest a fix.",
+    "constraints": [
+      "Identify the bug",
+      "Suggest a fix",
+      "Source can be any Python docs site"
+    ],
+    "start_url": "https://docs.python.org/3/library/stdtypes.html",
+    "expected_steps": [
+      "navigate Python docs",
+      "review str + int behavior",
+      "draft fix"
+    ],
+    "critical_actions": [
+      "docs.python.org",
+      "str",
+      "int",
+      "typeerror"
+    ],
+    "rubric": "Identifies that string + int raises TypeError and suggests explicit conversion or type check."
+  },
+  {
+    "id": "git-clone-instructions",
+    "category": "developer",
+    "title": "Clone a public GitHub repo over HTTPS",
+    "difficulty": "easy",
+    "goal": "Report the HTTPS clone URL and the first three commands to clone and set up the openai/whisper repository.",
+    "constraints": [
+      "Source: github.com/openai/whisper"
+    ],
+    "start_url": "https://github.com/openai/whisper",
+    "expected_steps": [
+      "navigate repo",
+      "copy HTTPS URL",
+      "list first three setup steps from README"
+    ],
+    "critical_actions": [
+      "github.com",
+      "openai/whisper",
+      "git clone",
+      "pip install"
+    ],
+    "rubric": "Reports the correct clone URL and first three setup commands from the README."
+  },
+  {
+    "id": "github-trending-python",
+    "category": "developer",
+    "title": "Top trending Python repos this week",
+    "difficulty": "easy",
+    "goal": "List the top 3 trending Python repositories on GitHub this week.",
+    "constraints": [
+      "Source: github.com/trending",
+      "Language: Python",
+      "Top 3"
+    ],
+    "start_url": "https://github.com/trending/python?since=weekly",
+    "expected_steps": [
+      "navigate GitHub trending",
+      "set language Python",
+      "extract top 3"
+    ],
+    "critical_actions": [
+      "github.com",
+      "trending",
+      "python"
+    ],
+    "rubric": "Lists the top 3 trending Python repos from github.com/trending."
+  },
+  {
+    "id": "good-first-issue-transcription-repo",
+    "category": "developer",
+    "title": "Find a good-first-issue in a transcription repo and propose a fix",
+    "difficulty": "hard",
+    "goal": "Find a GitHub issue labeled 'good first issue' in a transcription repository and propose a fix.",
+    "constraints": [
+      "Repository must be related to audio/video transcription",
+      "Issue must be labeled 'good first issue'",
+      "Proposed fix must be plausible (mentions specific file, function, or test)"
+    ],
+    "start_url": "https://github.com/search?q=transcription+label%3A%22good+first+issue%22&type=issues",
+    "expected_steps": [
+      "navigate GitHub",
+      "search transcription good first issue",
+      "open issue",
+      "read issue body",
+      "navigate to repository",
+      "inspect relevant source file",
+      "draft proposed fix"
+    ],
+    "critical_actions": [
+      "github.com",
+      "good first issue",
+      "transcription",
+      "fix"
+    ],
+    "final_answer": "Issue: openai/whisper #2456 'Add VAD pre-filter option'. Fix: extend transcribe() to accept vad_filter=True and call webrtcvad on the audio array before decoding, gated by a new --vad-filter CLI flag in transcribe.py.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "issue",
+        "transcribe",
+        "vad"
+      ]
+    },
+    "rubric": "Real labeled issue, in a real transcription repo, with a concrete fix that names a file, function, or change.",
+    "notes": "Snapshot reference. Live grader accepts any concrete fix referencing repository files."
+  },
+  {
+    "id": "kubernetes-get-pods",
+    "category": "developer",
+    "title": "kubectl command to list pods in all namespaces",
+    "difficulty": "easy",
+    "goal": "Find the correct kubectl command to list all pods in all namespaces, with their node names.",
+    "constraints": [
+      "Source: kubernetes.io docs"
+    ],
+    "start_url": "https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#get",
+    "expected_steps": [
+      "navigate kubectl docs",
+      "find get pods command",
+      "note all-namespaces and -o wide"
+    ],
+    "critical_actions": [
+      "kubernetes.io",
+      "kubectl get pods",
+      "-A",
+      "-o wide"
+    ],
+    "rubric": "Reports `kubectl get pods -A -o wide` from the official kubectl docs."
+  },
+  {
+    "id": "npm-package-readme",
+    "category": "developer",
+    "title": "Find installation steps for axios",
+    "difficulty": "easy",
+    "goal": "Look up the installation instructions for the axios npm package from its official README.",
+    "constraints": [
+      "Source: npmjs.com or github.com/axios"
+    ],
+    "start_url": "https://www.npmjs.com/package/axios",
+    "expected_steps": [
+      "navigate npmjs",
+      "open axios",
+      "extract install command"
+    ],
+    "critical_actions": [
+      "npmjs.com",
+      "axios",
+      "install",
+      "npm install"
+    ],
+    "rubric": "Reports the correct `npm install axios` install command from the official source."
+  },
+  {
+    "id": "open-source-license",
+    "category": "developer",
+    "title": "License of a popular repo",
+    "difficulty": "easy",
+    "goal": "Identify the license of the microsoft/TypeScript repository.",
+    "constraints": [
+      "Source: github.com/microsoft/TypeScript/blob/main/LICENSE"
+    ],
+    "start_url": "https://github.com/microsoft/TypeScript",
+    "expected_steps": [
+      "navigate repo",
+      "open LICENSE file",
+      "extract license name"
+    ],
+    "critical_actions": [
+      "github.com",
+      "microsoft/typescript",
+      "apache"
+    ],
+    "rubric": "Reports the Apache-2.0 license from the TypeScript LICENSE file."
+  },
+  {
+    "id": "pypi-package-latest",
+    "category": "developer",
+    "title": "Latest version of requests",
+    "difficulty": "easy",
+    "goal": "Find the latest stable version of the `requests` Python package and the Python versions it supports.",
+    "constraints": [
+      "Source: pypi.org"
+    ],
+    "start_url": "https://pypi.org/project/requests/",
+    "expected_steps": [
+      "navigate pypi",
+      "extract latest version",
+      "note python support"
+    ],
+    "critical_actions": [
+      "pypi.org",
+      "requests",
+      "version"
+    ],
+    "rubric": "Reports the latest requests version and supported Python versions."
+  },
+  {
+    "id": "regex-email",
+    "category": "developer",
+    "title": "Find a simple email regex",
+    "difficulty": "easy",
+    "goal": "Find a commonly-recommended simple regular expression for matching email addresses and report the pattern.",
+    "constraints": [
+      "Source: stackoverflow, MDN, or OWASP"
+    ],
+    "start_url": "https://stackoverflow.com/questions/201323/how-can-i-validate-an-email-address-using-a-regular-expression",
+    "expected_steps": [
+      "navigate SO",
+      "find top answer",
+      "extract pattern"
+    ],
+    "critical_actions": [
+      "stackoverflow.com",
+      "email",
+      "@"
+    ],
+    "rubric": "Reports a working email regex pattern from a reputable source."
+  },
+  {
+    "id": "rest-api-design",
+    "category": "developer",
+    "title": "Find the canonical REST endpoint to list GitHub repos for a user",
+    "difficulty": "medium",
+    "goal": "Report the correct GitHub REST API endpoint and HTTP verb to list public repositories for a given user.",
+    "constraints": [
+      "Source: docs.github.com"
+    ],
+    "start_url": "https://docs.github.com/en/rest/repos/repos",
+    "expected_steps": [
+      "navigate GitHub REST docs",
+      "find list-user-repos endpoint",
+      "extract verb and path"
+    ],
+    "critical_actions": [
+      "docs.github.com",
+      "GET",
+      "/users/{username}/repos"
+    ],
+    "rubric": "Reports `GET /users/{username}/repos` from docs.github.com."
+  },
+  {
+    "id": "semver-meaning",
+    "category": "developer",
+    "title": "Semver major vs minor vs patch",
+    "difficulty": "medium",
+    "goal": "Find a clear explanation of SemVer major/minor/patch increments from semver.org.",
+    "constraints": [
+      "Source: semver.org"
+    ],
+    "start_url": "https://semver.org/",
+    "expected_steps": [
+      "navigate semver.org",
+      "extract MAJOR.MINOR.PATCH rules"
+    ],
+    "critical_actions": [
+      "semver.org",
+      "major",
+      "minor",
+      "patch"
+    ],
+    "rubric": "Quotes or paraphrases the SemVer spec for major/minor/patch."
+  },
+  {
+    "id": "stackoverflow-top-question",
+    "category": "developer",
+    "title": "Top voted Python question on Stack Overflow",
+    "difficulty": "easy",
+    "goal": "Find the highest-voted Python question on Stack Overflow and report its score and tags.",
+    "constraints": [
+      "Source: stackoverflow.com",
+      "Tag: python"
+    ],
+    "start_url": "https://stackoverflow.com/questions/tagged/python?sort=votes",
+    "expected_steps": [
+      "navigate SO",
+      "filter tag python",
+      "sort by votes",
+      "extract top question"
+    ],
+    "critical_actions": [
+      "stackoverflow.com",
+      "python",
+      "votes"
+    ],
+    "rubric": "Reports the top-voted Python SO question with score and tags."
+  },
+  {
+    "id": "vscode-extension-install",
+    "category": "developer",
+    "title": "Install the Prettier VSCode extension",
+    "difficulty": "easy",
+    "goal": "Find the marketplace listing for the Prettier VSCode extension and report its install command.",
+    "constraints": [
+      "Source: marketplace.visualstudio.com"
+    ],
+    "start_url": "https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode",
+    "expected_steps": [
+      "navigate marketplace",
+      "open Prettier listing",
+      "extract install command"
+    ],
+    "critical_actions": [
+      "marketplace.visualstudio.com",
+      "prettier",
+      "code --install-extension"
+    ],
+    "rubric": "Reports the marketplace listing and `code --install-extension` command."
+  },
+  {
+    "id": "bookmark-manager",
+    "category": "productivity",
+    "title": "Find a privacy-respecting bookmark manager",
+    "difficulty": "medium",
+    "goal": "Find a self-hosted or E2E-encrypted bookmark manager recommended on Hacker News.",
+    "constraints": [
+      "Privacy-respecting",
+      "Source: Hacker News or reputable review"
+    ],
+    "start_url": "https://hn.algolia.com/?q=bookmark+manager+self+hosted",
+    "expected_steps": [
+      "navigate HN search",
+      "open top thread",
+      "extract top recommendation"
+    ],
+    "critical_actions": [
+      "hn.algolia.com",
+      "bookmark",
+      "self-hosted"
+    ],
+    "rubric": "Reports a privacy-respecting bookmark manager from an HN discussion."
+  },
+  {
+    "id": "cal-event-create",
+    "category": "productivity",
+    "title": "Add a calendar event for next Monday at 2pm",
+    "difficulty": "medium",
+    "goal": "Add a calendar event titled 'Project sync' on next Monday at 2pm for 30 minutes on Google Calendar.",
+    "constraints": [
+      "Use Google Calendar",
+      "Event title exactly 'Project sync'",
+      "Next Monday at 14:00, 30 min"
+    ],
+    "start_url": "https://calendar.google.com",
+    "expected_steps": [
+      "navigate Google Calendar",
+      "click create",
+      "enter title",
+      "set date and time",
+      "save"
+    ],
+    "critical_actions": [
+      "calendar.google.com",
+      "project sync",
+      "save"
+    ],
+    "rubric": "Confirms a 'Project sync' event was scheduled for next Monday 14:00, 30 min."
+  },
+  {
+    "id": "drive-share-folder",
+    "category": "productivity",
+    "title": "Share a Google Drive folder with view access",
+    "difficulty": "medium",
+    "goal": "Create a new folder in Google Drive named 'AgentBench-K reports' and share it with view-only access for a given email.",
+    "constraints": [
+      "Folder name exact",
+      "Access level: viewer"
+    ],
+    "start_url": "https://drive.google.com",
+    "expected_steps": [
+      "navigate Drive",
+      "create folder",
+      "rename",
+      "click share",
+      "set viewer permission",
+      "send invite"
+    ],
+    "critical_actions": [
+      "drive.google.com",
+      "agentbench-k reports",
+      "viewer"
+    ],
+    "rubric": "Confirms folder 'AgentBench-K reports' exists with a viewer share."
+  },
+  {
+    "id": "gmail-unsubscribe",
+    "category": "productivity",
+    "title": "Unsubscribe from marketing emails in Gmail",
+    "difficulty": "medium",
+    "goal": "Find a marketing email in Gmail from the last 7 days and unsubscribe.",
+    "constraints": [
+      "Use Gmail",
+      "Action: unsubscribe (do not just delete)"
+    ],
+    "start_url": "https://mail.google.com",
+    "expected_steps": [
+      "navigate Gmail",
+      "search category:promotions",
+      "open email",
+      "click unsubscribe",
+      "confirm"
+    ],
+    "critical_actions": [
+      "mail.google.com",
+      "unsubscribe"
+    ],
+    "rubric": "Confirms an unsubscribe was performed (not just delete) on a marketing email."
+  },
+  {
+    "id": "notion-template",
+    "category": "productivity",
+    "title": "Find a Notion OKR template",
+    "difficulty": "easy",
+    "goal": "Find a free, public Notion template for tracking team OKRs.",
+    "constraints": [
+      "Source: notion.so or notion.com templates gallery",
+      "Free, public"
+    ],
+    "start_url": "https://www.notion.so/templates/category/okrs",
+    "expected_steps": [
+      "navigate Notion templates",
+      "filter OKR",
+      "open template",
+      "extract title and URL"
+    ],
+    "critical_actions": [
+      "notion.so",
+      "okr",
+      "template"
+    ],
+    "rubric": "Reports a real, free, public Notion OKR template title and URL."
+  },
+  {
+    "id": "pdf-compress-tool",
+    "category": "productivity",
+    "title": "Find a free online PDF compressor",
+    "difficulty": "easy",
+    "goal": "Find a free, reputable online tool that compresses PDFs without uploading to a server.",
+    "constraints": [
+      "Free",
+      "Local processing preferred",
+      "Source: review or trust list"
+    ],
+    "start_url": "https://www.reddit.com/r/productivity/search/?q=pdf+compress",
+    "expected_steps": [
+      "navigate Reddit",
+      "search pdf compress",
+      "open top recommendation",
+      "verify local processing"
+    ],
+    "critical_actions": [
+      "compress",
+      "pdf",
+      "local",
+      "free"
+    ],
+    "rubric": "Identifies a free, ideally local-processing PDF compression tool."
+  },
+  {
+    "id": "recipe-chicken-thighs",
+    "category": "productivity",
+    "title": "Find a quick weeknight chicken thigh recipe",
+    "difficulty": "easy",
+    "goal": "Find a highly-rated weeknight recipe for boneless chicken thighs that takes under 30 minutes.",
+    "constraints": [
+      "Under 30 minutes",
+      "Boneless thighs",
+      "At least 4.5 stars"
+    ],
+    "start_url": "https://www.seriouseats.com/search?q=chicken+thighs+weeknight",
+    "expected_steps": [
+      "navigate Serious Eats",
+      "search chicken thighs weeknight",
+      "filter rating and time",
+      "extract recipe"
+    ],
+    "critical_actions": [
+      "seriouseats.com",
+      "chicken thighs",
+      "30 minutes"
+    ],
+    "rubric": "Real, 4.5+ star weeknight chicken thigh recipe under 30 min."
+  },
+  {
+    "id": "standing-desk-under-300",
+    "category": "productivity",
+    "title": "Standing desk converter under $300",
+    "difficulty": "medium",
+    "goal": "Find a standing desk converter (sits on top of an existing desk) priced under $300 with at least 4.5 stars.",
+    "constraints": [
+      "Under $300",
+      "Sits on a desk (converter, not full desk)",
+      "At least 4.5 star average rating",
+      "Ships in 2 days or less"
+    ],
+    "start_url": "https://www.amazon.com/s?k=standing+desk+converter",
+    "expected_steps": [
+      "navigate Amazon",
+      "search standing desk converter",
+      "apply price and rating filters",
+      "open top product",
+      "verify rating and price",
+      "extract product"
+    ],
+    "critical_actions": [
+      "amazon.com",
+      "standing desk",
+      "converter",
+      "rating"
+    ],
+    "rubric": "Real standing desk converter under $300 with 4.5+ star average.",
+    "notes": "Example: Vari Electric Standing Desk Converter. Any product meeting all constraints passes."
+  },
+  {
+    "id": "translate-fr-en",
+    "category": "productivity",
+    "title": "Translate a French sentence to English",
+    "difficulty": "easy",
+    "goal": "Translate 'La recherche en intelligence artificielle progresse rapidement.' from French to English using DeepL.",
+    "constraints": [
+      "Source: deepl.com",
+      "Provide the English translation"
+    ],
+    "start_url": "https://www.deepl.com/translator",
+    "expected_steps": [
+      "navigate DeepL",
+      "set source French, target English",
+      "paste sentence",
+      "extract translation"
+    ],
+    "critical_actions": [
+      "deepl.com",
+      "french",
+      "english",
+      "research"
+    ],
+    "rubric": "Produces the DeepL English translation of the French sentence."
+  },
+  {
+    "id": "weather-week",
+    "category": "productivity",
+    "title": "7-day weather forecast for Paris",
+    "difficulty": "easy",
+    "goal": "Get the 7-day weather forecast for Paris, France, with daily highs and lows.",
+    "constraints": [
+      "Source: major weather site",
+      "Include all 7 days"
+    ],
+    "start_url": "https://www.weather.com",
+    "expected_steps": [
+      "navigate weather site",
+      "search Paris",
+      "extract 7-day forecast"
+    ],
+    "critical_actions": [
+      "weather.com",
+      "paris",
+      "monday",
+      "tuesday"
+    ],
+    "rubric": "Reports a 7-day Paris forecast with daily highs/lows from a major weather site."
+  },
+  {
+    "id": "agentbench-related",
+    "category": "research",
+    "title": "Find AgentBench paper",
+    "difficulty": "medium",
+    "goal": "Find the AgentBench paper and summarize its evaluation categories.",
+    "constraints": [
+      "Source: arXiv"
+    ],
+    "start_url": "https://arxiv.org/abs/2308.03688",
+    "expected_steps": [
+      "navigate arXiv",
+      "open AgentBench",
+      "list evaluation categories"
+    ],
+    "critical_actions": [
+      "arxiv.org",
+      "2308.03688",
+      "agentbench"
+    ],
+    "rubric": "Lists AgentBench evaluation categories (web, code, game, etc.)."
+  },
+  {
+    "id": "diffusion-models-history",
+    "category": "research",
+    "title": "Original DDPM paper",
+    "difficulty": "medium",
+    "goal": "Find the original Denoising Diffusion Probabilistic Models paper and report authors, year, and dataset used.",
+    "constraints": [
+      "Source must be arXiv or NeurIPS proceedings"
+    ],
+    "start_url": "https://arxiv.org/abs/2006.11239",
+    "expected_steps": [
+      "navigate arXiv",
+      "open paper",
+      "extract authors, year, dataset"
+    ],
+    "critical_actions": [
+      "arxiv.org",
+      "2006.11239",
+      "ho"
+    ],
+    "rubric": "Reports Ho et al. 2020 DDPM paper and the ImageNet/CIFAR datasets."
+  },
+  {
+    "id": "gemini-1-5-report",
+    "category": "research",
+    "title": "Gemini 1.5 technical report",
+    "difficulty": "medium",
+    "goal": "Find the Gemini 1.5 technical report and report the context window size.",
+    "constraints": [
+      "Source: arXiv or DeepMind blog"
+    ],
+    "start_url": "https://arxiv.org/abs/2403.05530",
+    "expected_steps": [
+      "navigate arXiv",
+      "open Gemini 1.5 paper",
+      "extract context window"
+    ],
+    "critical_actions": [
+      "arxiv.org",
+      "2403.05530",
+      "gemini",
+      "1.5"
+    ],
+    "rubric": "Reports Gemini 1.5's 1M (Pro) / 2M (Flash) token context window."
+  },
+  {
+    "id": "llama-3-paper",
+    "category": "research",
+    "title": "Llama 3 technical report",
+    "difficulty": "medium",
+    "goal": "Find the Llama 3 technical report and report model sizes, training data scale, and benchmark scores for MMLU.",
+    "constraints": [
+      "Source: arXiv or Meta AI site"
+    ],
+    "start_url": "https://arxiv.org/abs/2407.21783",
+    "expected_steps": [
+      "navigate arXiv",
+      "open Llama 3 paper",
+      "extract model sizes, tokens, MMLU"
+    ],
+    "critical_actions": [
+      "arxiv.org",
+      "2407.21783",
+      "llama",
+      "8b",
+      "70b"
+    ],
+    "rubric": "Reports Llama 3 model sizes (8B/70B/405B), training tokens, and MMLU score."
+  },
+  {
+    "id": "mamba-paper",
+    "category": "research",
+    "title": "Mamba state-space model paper",
+    "difficulty": "medium",
+    "goal": "Find the Mamba state-space model paper and report its key contribution in one sentence.",
+    "constraints": [
+      "Source must be arXiv"
+    ],
+    "start_url": "https://arxiv.org/abs/2312.00752",
+    "expected_steps": [
+      "navigate arXiv",
+      "open paper",
+      "extract abstract contribution"
+    ],
+    "critical_actions": [
+      "arxiv.org",
+      "2312.00752",
+      "mamba"
+    ],
+    "rubric": "Reports the Mamba paper (Gu & Dao 2023) and its selective SSM contribution."
+  },
+  {
+    "id": "mixture-of-experts-survey",
+    "category": "research",
+    "title": "Recent Mixture-of-Experts survey",
+    "difficulty": "hard",
+    "goal": "Find a 2023 or 2024 survey paper on Mixture-of-Experts (MoE) and list its main sections.",
+    "constraints": [
+      "Source: arXiv or major ML conference",
+      "Published 2023+"
+    ],
+    "start_url": "https://arxiv.org/search/?query=mixture+of+experts+survey&start=0",
+    "expected_steps": [
+      "navigate arXiv",
+      "search MoE survey",
+      "open survey",
+      "extract section headings"
+    ],
+    "critical_actions": [
+      "arxiv.org",
+      "mixture",
+      "experts",
+      "survey"
+    ],
+    "rubric": "Identifies a real MoE survey paper and lists its main sections."
+  },
+  {
+    "id": "openai-o1-report",
+    "category": "research",
+    "title": "OpenAI o1 system card",
+    "difficulty": "medium",
+    "goal": "Find the OpenAI o1 system card and report its key safety findings.",
+    "constraints": [
+      "Source: openai.com or arXiv mirror"
+    ],
+    "start_url": "https://openai.com/index/openai-o1-system-card/",
+    "expected_steps": [
+      "navigate OpenAI",
+      "open o1 system card",
+      "extract safety findings"
+    ],
+    "critical_actions": [
+      "openai.com",
+      "o1",
+      "system card"
+    ],
+    "rubric": "Reports key o1 safety findings (jailbreak resistance, bio/chem evals)."
+  },
+  {
+    "id": "rags-original-paper",
+    "category": "research",
+    "title": "Original RAG paper citation",
+    "difficulty": "medium",
+    "goal": "Find the original Retrieval-Augmented Generation paper and report its title, authors, and year.",
+    "constraints": [
+      "Source must be arXiv or ACL Anthology"
+    ],
+    "start_url": "https://arxiv.org/abs/2005.11401",
+    "expected_steps": [
+      "navigate arXiv",
+      "open paper 2005.11401",
+      "extract title, authors, year"
+    ],
+    "critical_actions": [
+      "arxiv.org",
+      "2005.11401",
+      "lewis"
+    ],
+    "rubric": "Identifies Lewis et al. 2020 RAG paper with title and authors."
+  },
+  {
+    "id": "speech-recognition-benchmarks",
+    "category": "research",
+    "title": "Compare LibriSpeech and Common Voice",
+    "difficulty": "hard",
+    "goal": "Summarize the differences between LibriSpeech and Common Voice as ASR benchmarks.",
+    "constraints": [
+      "Source: official project sites or papers",
+      "Cover data source, license, size"
+    ],
+    "start_url": "https://www.openslr.org/12",
+    "expected_steps": [
+      "navigate LibriSpeech",
+      "navigate Common Voice site",
+      "compare size, license, source"
+    ],
+    "critical_actions": [
+      "openslr.org",
+      "common voice",
+      "license",
+      "hours"
+    ],
+    "rubric": "Compares LibriSpeech (read audio, public domain) vs Common Voice (crowdsourced, CC0) on size and license."
+  },
+  {
+    "id": "three-asr-low-resource-papers",
+    "category": "research",
+    "title": "Three recent ASR papers for low-resource languages",
+    "difficulty": "medium",
+    "goal": "Find three recent papers about speech recognition for low-resource languages and summarize their contributions.",
+    "constraints": [
+      "Papers must be published in 2024 or later",
+      "Topic: ASR (automatic speech recognition)",
+      "Domain: low-resource languages",
+      "Each summary must mention the core contribution"
+    ],
+    "start_url": "https://arxiv.org/list/cs.CL/2024",
+    "expected_steps": [
+      "navigate arxiv",
+      "search automatic speech recognition low-resource",
+      "open first paper",
+      "extract abstract",
+      "open second paper",
+      "extract abstract",
+      "open third paper",
+      "extract abstract",
+      "summarize contributions"
+    ],
+    "critical_actions": [
+      "arxiv.org",
+      "low-resource",
+      "speech recognition",
+      "abstract"
+    ],
+    "final_answer": "1. wav2vec-U 2.0 (2024) - unsupervised ASR for unwritten languages. 2. Whisper-Low (2024) - distillation pipeline for under-represented languages. 3. SSL-Adapt (2024) - self-supervised transfer for 50+ African languages.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "wav2vec",
+        "whisper",
+        "2024"
+      ]
+    },
+    "rubric": "Three distinct ASR papers, all 2024+, with one-sentence summaries of the core contribution each.",
+    "notes": "Reference list is illustrative. Grader checks for 2024 + at least one recognized low-resource ASR paper."
+  },
+  {
+    "id": "average-coffee-price",
+    "category": "search",
+    "title": "Average price of a latte in NYC",
+    "difficulty": "medium",
+    "goal": "Find the average price of a regular latte at a coffee shop in New York City.",
+    "constraints": [
+      "Cite the source (Numbeo, survey, article)",
+      "Report price in USD"
+    ],
+    "start_url": "https://www.numbeo.com/cost-of-living/in/New-York",
+    "expected_steps": [
+      "navigate Numbeo NYC",
+      "search coffee/latte price",
+      "extract average"
+    ],
+    "critical_actions": [
+      "numbeo.com",
+      "latte",
+      "new york"
+    ],
+    "rubric": "Reports NYC latte average in USD with a source."
+  },
+  {
+    "id": "bitcoin-price-now",
+    "category": "search",
+    "title": "Current Bitcoin price in USD",
+    "difficulty": "easy",
+    "goal": "Find the current price of one Bitcoin in US dollars.",
+    "constraints": [
+      "Use a major exchange or aggregator",
+      "Report price and timestamp"
+    ],
+    "start_url": "https://www.coindesk.com/price/bitcoin/",
+    "expected_steps": [
+      "navigate CoinDesk",
+      "extract BTC/USD price",
+      "note timestamp"
+    ],
+    "critical_actions": [
+      "coindesk.com",
+      "BTC",
+      "$"
+    ],
+    "rubric": "Reports current BTC price in USD with a timestamp."
+  },
+  {
+    "id": "ceo-of-nvidia",
+    "category": "search",
+    "title": "Who is the current CEO of NVIDIA?",
+    "difficulty": "easy",
+    "goal": "Look up the current CEO of NVIDIA and report their name and start date.",
+    "constraints": [
+      "Source must be NVIDIA's site or a major news outlet"
+    ],
+    "start_url": "https://www.nvidia.com/en-us/about-nvidia/",
+    "expected_steps": [
+      "navigate NVIDIA about page",
+      "extract CEO name",
+      "note start date"
+    ],
+    "critical_actions": [
+      "nvidia.com",
+      "CEO"
+    ],
+    "rubric": "Reports the current NVIDIA CEO's name and approximate start date."
+  },
+  {
+    "id": "current-weather-sf",
+    "category": "search",
+    "title": "Current weather in San Francisco",
+    "difficulty": "easy",
+    "goal": "Find the current temperature and conditions in San Francisco.",
+    "constraints": [
+      "Use a major weather site",
+      "Report temp in F and conditions"
+    ],
+    "start_url": "https://www.weather.com",
+    "expected_steps": [
+      "navigate weather site",
+      "search San Francisco",
+      "extract temperature and conditions"
+    ],
+    "critical_actions": [
+      "weather.com",
+      "san francisco",
+      "temperature"
+    ],
+    "rubric": "Reports current SF temperature and conditions from a major weather site."
+  },
+  {
+    "id": "definition-rag",
+    "category": "search",
+    "title": "Definition of RAG in AI",
+    "difficulty": "medium",
+    "goal": "Find a clear, sourced definition of Retrieval-Augmented Generation (RAG).",
+    "constraints": [
+      "Definition must come from an authoritative source (paper, vendor doc, or Wikipedia)"
+    ],
+    "start_url": "https://en.wikipedia.org/wiki/Retrieval-augmented_generation",
+    "expected_steps": [
+      "navigate Wikipedia",
+      "extract RAG definition",
+      "cite original paper if available"
+    ],
+    "critical_actions": [
+      "wikipedia.org",
+      "retrieval",
+      "augmented",
+      "generation"
+    ],
+    "rubric": "Quotes or paraphrases a clear RAG definition and cites the source."
+  },
+  {
+    "id": "distance-earth-moon",
+    "category": "search",
+    "title": "Current distance Earth to Moon",
+    "difficulty": "easy",
+    "goal": "Find the current average distance from the Earth to the Moon in kilometers.",
+    "constraints": [
+      "Cite a reputable source",
+      "Report in km"
+    ],
+    "start_url": "https://en.wikipedia.org/wiki/Moon",
+    "expected_steps": [
+      "navigate Wikipedia Moon",
+      "extract distance",
+      "note units"
+    ],
+    "critical_actions": [
+      "wikipedia.org",
+      "moon",
+      "km"
+    ],
+    "rubric": "Reports Earth-Moon distance in km with a source."
+  },
+  {
+    "id": "hubble-telescope-launch",
+    "category": "search",
+    "title": "When was the Hubble Space Telescope launched?",
+    "difficulty": "easy",
+    "goal": "Find the launch date of the Hubble Space Telescope.",
+    "constraints": [
+      "Source must be NASA.gov or Wikipedia"
+    ],
+    "start_url": "https://en.wikipedia.org/wiki/Hubble_Space_Telescope",
+    "expected_steps": [
+      "navigate Wikipedia",
+      "extract launch date",
+      "note mission name"
+    ],
+    "critical_actions": [
+      "wikipedia.org",
+      "1990",
+      "hubble"
+    ],
+    "rubric": "Reports the Hubble launch date (1990-04-24) with a source."
+  },
+  {
+    "id": "iphone-latest-model",
+    "category": "search",
+    "title": "Apple's current flagship iPhone",
+    "difficulty": "easy",
+    "goal": "Identify Apple's currently-shipping flagship iPhone model and starting price.",
+    "constraints": [
+      "Source must be apple.com",
+      "Report the model name and starting price"
+    ],
+    "start_url": "https://www.apple.com/iphone/",
+    "expected_steps": [
+      "navigate apple.com/iphone",
+      "extract current flagship",
+      "extract price"
+    ],
+    "critical_actions": [
+      "apple.com",
+      "iphone",
+      "$"
+    ],
+    "rubric": "Reports current flagship iPhone model and starting price from apple.com."
+  },
+  {
+    "id": "python-latest-version",
+    "category": "search",
+    "title": "Latest stable Python version",
+    "difficulty": "easy",
+    "goal": "Find the latest stable Python release version and release date.",
+    "constraints": [
+      "Source must be python.org or PEP index"
+    ],
+    "start_url": "https://www.python.org/downloads/",
+    "expected_steps": [
+      "navigate python.org downloads",
+      "extract latest version",
+      "note release date"
+    ],
+    "critical_actions": [
+      "python.org",
+      "download"
+    ],
+    "rubric": "Reports the latest stable Python version and release date."
+  },
+  {
+    "id": "stock-price-apple",
+    "category": "search",
+    "title": "Current Apple stock price",
+    "difficulty": "easy",
+    "goal": "Find the current trading price of AAPL.",
+    "constraints": [
+      "Use a financial data site",
+      "Report the price and as-of time"
+    ],
+    "start_url": "https://finance.yahoo.com/quote/AAPL/",
+    "expected_steps": [
+      "navigate Yahoo Finance",
+      "search AAPL",
+      "extract price and timestamp"
+    ],
+    "critical_actions": [
+      "finance.yahoo.com",
+      "AAPL",
+      "$"
+    ],
+    "rubric": "Reports current AAPL price and as-of time from a financial site."
+  },
+  {
+    "id": "top-imdb-movie",
+    "category": "search",
+    "title": "Top-rated movie on IMDb",
+    "difficulty": "easy",
+    "goal": "Find the current #1 movie on the IMDb Top 250 list.",
+    "constraints": [
+      "Source must be imdb.com",
+      "Report title, year, rating"
+    ],
+    "start_url": "https://www.imdb.com/chart/top/",
+    "expected_steps": [
+      "navigate IMDb top 250",
+      "extract #1 entry",
+      "note rating and year"
+    ],
+    "critical_actions": [
+      "imdb.com",
+      "top"
+    ],
+    "rubric": "Reports current #1 IMDb Top 250 movie with year and rating."
+  },
+  {
+    "id": "us-president-current",
+    "category": "search",
+    "title": "Current US President",
+    "difficulty": "easy",
+    "goal": "Identify the current US President and report their inauguration date.",
+    "constraints": [
+      "Source must be whitehouse.gov or major news outlet"
+    ],
+    "start_url": "https://www.whitehouse.gov/administration/",
+    "expected_steps": [
+      "navigate whitehouse.gov",
+      "extract president name",
+      "note inauguration date"
+    ],
+    "critical_actions": [
+      "whitehouse.gov",
+      "president"
+    ],
+    "rubric": "Reports the current US president and inauguration date from whitehouse.gov."
+  },
+  {
+    "id": "webb-telescope-first-image",
+    "category": "search",
+    "title": "First image released by JWST",
+    "difficulty": "easy",
+    "goal": "Identify the first publicly-released deep-field image from JWST and its release date.",
+    "constraints": [
+      "Source must be NASA, ESA, or major news outlet"
+    ],
+    "start_url": "https://webbtelescope.org/resource-gallery/images",
+    "expected_steps": [
+      "navigate NASA JWST gallery",
+      "extract first deep field",
+      "note release date"
+    ],
+    "critical_actions": [
+      "webb",
+      "deep field",
+      "2022"
+    ],
+    "rubric": "Reports JWST's first deep field (SMACS 0723) and July 2022 release date."
+  },
+  {
+    "id": "wikipedia-population-tokyo",
+    "category": "search",
+    "title": "Find the current population of Tokyo from Wikipedia",
+    "difficulty": "easy",
+    "goal": "Look up the current population of Tokyo on Wikipedia and report the most recent estimate.",
+    "constraints": [
+      "Source must be Wikipedia",
+      "Report the most recent figure available",
+      "Cite the year of the estimate"
+    ],
+    "start_url": "https://en.wikipedia.org/wiki/Tokyo",
+    "expected_steps": [
+      "navigate Wikipedia Tokyo",
+      "extract population from infobox",
+      "note reference year"
+    ],
+    "critical_actions": [
+      "wikipedia.org",
+      "tokyo",
+      "population"
+    ],
+    "final_answer": "Tokyo metropolitan area population: 41.0 million (2023 estimate).",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "tokyo",
+        "million",
+        "2023"
+      ]
+    },
+    "rubric": "Reports a recent population figure for Tokyo with a year, sourced from Wikipedia.",
+    "notes": "Wikipedia figures shift; rubric accepts any post-2020 figure with a year."
+  },
+  {
+    "id": "world-cup-2026-host",
+    "category": "search",
+    "title": "Host cities for FIFA World Cup 2026",
+    "difficulty": "easy",
+    "goal": "List the host cities for the 2026 FIFA World Cup.",
+    "constraints": [
+      "Source must be FIFA or major sports outlet",
+      "List at least 10 cities"
+    ],
+    "start_url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup",
+    "expected_steps": [
+      "navigate Wikipedia",
+      "extract host cities section",
+      "list cities"
+    ],
+    "critical_actions": [
+      "wikipedia.org",
+      "2026",
+      "host"
+    ],
+    "rubric": "Lists at least 10 of the 16 host cities for the 2026 World Cup."
+  },
+  {
+    "id": "4k-monitor-27in",
+    "category": "shopping",
+    "title": "27-inch 4K monitor for coding",
+    "difficulty": "medium",
+    "goal": "Find a 27-inch 4K IPS monitor suitable for coding (good text clarity) under $450.",
+    "constraints": [
+      "27 inch",
+      "4K (3840x2160)",
+      "IPS panel preferred",
+      "Under $450"
+    ],
+    "start_url": "https://www.rtings.com/monitor/reviews/best/by-usage/desktop",
+    "expected_steps": [
+      "navigate RTINGS monitor reviews",
+      "filter 27-inch 4K",
+      "verify text clarity score",
+      "extract price"
+    ],
+    "critical_actions": [
+      "rtings.com",
+      "4k",
+      "ips"
+    ],
+    "rubric": "Real 27\" 4K IPS monitor under $450 with strong text-clarity rating."
+  },
+  {
+    "id": "air-purifier-large-room",
+    "category": "shopping",
+    "title": "Air purifier for a 500 sq ft room",
+    "difficulty": "medium",
+    "goal": "Find an air purifier rated for at least 500 sq ft, ideally with a HEPA filter, under $250.",
+    "constraints": [
+      "Covers 500+ sq ft",
+      "HEPA filter preferred",
+      "Under $250"
+    ],
+    "start_url": "https://www.amazon.com/s?k=air+purifier+large+room",
+    "expected_steps": [
+      "navigate Amazon",
+      "search air purifier",
+      "filter coverage area and price",
+      "extract top pick"
+    ],
+    "critical_actions": [
+      "amazon.com",
+      "air purifier",
+      "hepa"
+    ],
+    "rubric": "Real air purifier rated 500+ sq ft, HEPA, under $250."
+  },
+  {
+    "id": "cheap-nonstop-nyc-london",
+    "category": "shopping",
+    "title": "Cheapest nonstop flight NYC to London",
+    "difficulty": "medium",
+    "goal": "Find the cheapest nonstop flight from NYC to London departing next Friday and returning Sunday.",
+    "constraints": [
+      "Nonstop only",
+      "Departure airport must be in NYC area (JFK, LGA, EWR)",
+      "Arrival must be in London (LHR, LGW, STN, LTN, LCY)",
+      "Outbound: next Friday",
+      "Return: following Sunday",
+      "Price reported within $20 of reference"
+    ],
+    "start_url": "https://www.google.com/travel/flights",
+    "expected_steps": [
+      "navigate Google Flights",
+      "search NYC to LON",
+      "filter nonstop",
+      "select departure next Friday",
+      "select return Sunday",
+      "sort by price",
+      "extract airline, times, price"
+    ],
+    "critical_actions": [
+      "google.com/travel/flights",
+      "nonstop",
+      "friday",
+      "sunday",
+      "sort by price"
+    ],
+    "final_answer": "JetBlue B6 120 JFK 21:30 -> LHR 09:10, $418 round trip",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "JFK",
+        "LHR",
+        "418"
+      ]
+    },
+    "rubric": "Cheapest nonstop JFK-LHR round-trip departing next Friday and returning Sunday, price within $20 of $418.",
+    "notes": "Reference answer is a snapshot. Real prices change; the rubric allows $20 drift."
+  },
+  {
+    "id": "electric-toaster-4-slice",
+    "category": "shopping",
+    "title": "4-slice toaster with high ratings",
+    "difficulty": "easy",
+    "goal": "Find a well-reviewed 4-slice toaster under $80.",
+    "constraints": [
+      "4 slots",
+      "Under $80",
+      "At least 4.3 stars"
+    ],
+    "start_url": "https://www.amazon.com/s?k=4+slice+toaster",
+    "expected_steps": [
+      "navigate Amazon",
+      "search 4-slice toaster",
+      "filter rating and price",
+      "extract product"
+    ],
+    "critical_actions": [
+      "amazon.com",
+      "4-slice",
+      "toaster"
+    ],
+    "rubric": "Real 4-slice toaster under $80 with 4.3+ star average."
+  },
+  {
+    "id": "espresso-machine-home",
+    "category": "shopping",
+    "title": "Home espresso machine under $500",
+    "difficulty": "medium",
+    "goal": "Find a well-reviewed home espresso machine under $500 that includes a milk steamer.",
+    "constraints": [
+      "Under $500",
+      "Milk steamer/frother included",
+      "At least 4-star average"
+    ],
+    "start_url": "https://www.amazon.com/s?k=espresso+machine",
+    "expected_steps": [
+      "navigate Amazon",
+      "apply price filter",
+      "search espresso with milk frother",
+      "extract top pick"
+    ],
+    "critical_actions": [
+      "amazon.com",
+      "espresso",
+      "frother"
+    ],
+    "rubric": "Real espresso machine under $500 with steam wand, 4+ stars."
+  },
+  {
+    "id": "gift-under-50-mom",
+    "category": "shopping",
+    "title": "Birthday gift under $50 for mom",
+    "difficulty": "medium",
+    "goal": "Find a thoughtful birthday gift for a mother who enjoys gardening, under $50.",
+    "constraints": [
+      "Under $50",
+      "Garden-themed",
+      "Ships in 2 days or less"
+    ],
+    "start_url": "https://www.amazon.com/s?k=gardening+gift+for+mother",
+    "expected_steps": [
+      "navigate Amazon",
+      "search gardening gift for mom",
+      "apply price and shipping filters",
+      "extract product"
+    ],
+    "critical_actions": [
+      "amazon.com",
+      "garden",
+      "mother"
+    ],
+    "rubric": "Real garden-themed gift for a mother under $50 with fast shipping."
+  },
+  {
+    "id": "laptop-stand-ergonomic",
+    "category": "shopping",
+    "title": "Ergonomic laptop stand for a 16-inch laptop",
+    "difficulty": "easy",
+    "goal": "Find an ergonomic laptop stand that supports a 16-inch MacBook Pro, under $80.",
+    "constraints": [
+      "Fits 16-inch laptop",
+      "Under $80",
+      "Adjustable height"
+    ],
+    "start_url": "https://www.amazon.com/s?k=laptop+stand+ergonomic",
+    "expected_steps": [
+      "navigate Amazon",
+      "search laptop stand",
+      "filter size and price",
+      "extract top pick"
+    ],
+    "critical_actions": [
+      "amazon.com",
+      "laptop stand",
+      "16"
+    ],
+    "rubric": "Real ergonomic laptop stand under $80 that fits a 16-inch laptop."
+  },
+  {
+    "id": "mechanical-keyboard-under-120",
+    "category": "shopping",
+    "title": "Mechanical keyboard under $120 with hot-swap and wireless",
+    "difficulty": "easy",
+    "goal": "Find a mechanical keyboard under $120 with hot-swappable switches and wireless support.",
+    "constraints": [
+      "Under $120",
+      "Hot-swappable",
+      "Wireless (BT or 2.4GHz)"
+    ],
+    "start_url": "https://www.amazon.com/s?k=mechanical+keyboard+hot+swap+wireless",
+    "expected_steps": [
+      "navigate Amazon",
+      "search mechanical keyboard hot swap wireless",
+      "apply price filter",
+      "verify specs on listing"
+    ],
+    "critical_actions": [
+      "amazon.com",
+      "hot-swap",
+      "wireless",
+      "$"
+    ],
+    "rubric": "Real in-stock mechanical keyboard under $120 with hot-swap + wireless."
+  },
+  {
+    "id": "noise-cancelling-headphones",
+    "category": "shopping",
+    "title": "Best-rated noise-cancelling headphones under $300",
+    "difficulty": "medium",
+    "goal": "Find the highest-rated noise-cancelling wireless headphones under $300.",
+    "constraints": [
+      "Under $300",
+      "Active noise cancellation",
+      "Wireless"
+    ],
+    "start_url": "https://www.rtings.com/headphones/reviews/best/by-feature/active-noise-cancelling",
+    "expected_steps": [
+      "navigate RTINGS noise-cancelling list",
+      "apply price filter",
+      "extract top pick"
+    ],
+    "critical_actions": [
+      "rtings.com",
+      "noise-cancelling",
+      "wireless"
+    ],
+    "rubric": "Highest-rated ANC wireless headphones under $300 from a review site."
+  },
+  {
+    "id": "running-shoes-under-100",
+    "category": "shopping",
+    "title": "Running shoes under $100",
+    "difficulty": "easy",
+    "goal": "Find a pair of well-reviewed running shoes currently selling for under $100.",
+    "constraints": [
+      "Under $100",
+      "At least 4-star average",
+      "Available in standard US sizes"
+    ],
+    "start_url": "https://www.rei.com/c/running-shoes",
+    "expected_steps": [
+      "navigate REI running shoes",
+      "apply price filter",
+      "sort by rating",
+      "extract model and price"
+    ],
+    "critical_actions": [
+      "rei.com",
+      "running",
+      "rating"
+    ],
+    "rubric": "Real running shoes under $100 with a 4+ star rating from a major retailer."
+  }
+]

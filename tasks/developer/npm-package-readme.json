@@ -1,0 +1,23 @@
+{
+  "id": "npm-package-readme",
+  "category": "developer",
+  "title": "Find installation steps for axios",
+  "difficulty": "easy",
+  "goal": "Look up the installation instructions for the axios npm package from its official README.",
+  "constraints": [
+    "Source: npmjs.com or github.com/axios"
+  ],
+  "start_url": "https://www.npmjs.com/package/axios",
+  "expected_steps": [
+    "navigate npmjs",
+    "open axios",
+    "extract install command"
+  ],
+  "critical_actions": [
+    "npmjs.com",
+    "axios",
+    "install",
+    "npm install"
+  ],
+  "rubric": "Reports the correct `npm install axios` install command from the official source."
+}

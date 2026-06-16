@@ -1,0 +1,22 @@
+{
+  "id": "mamba-paper",
+  "category": "research",
+  "title": "Mamba state-space model paper",
+  "difficulty": "medium",
+  "goal": "Find the Mamba state-space model paper and report its key contribution in one sentence.",
+  "constraints": [
+    "Source must be arXiv"
+  ],
+  "start_url": "https://arxiv.org/abs/2312.00752",
+  "expected_steps": [
+    "navigate arXiv",
+    "open paper",
+    "extract abstract contribution"
+  ],
+  "critical_actions": [
+    "arxiv.org",
+    "2312.00752",
+    "mamba"
+  ],
+  "rubric": "Reports the Mamba paper (Gu & Dao 2023) and its selective SSM contribution."
+}

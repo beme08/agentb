@@ -1,0 +1,25 @@
+{
+  "id": "air-purifier-large-room",
+  "category": "shopping",
+  "title": "Air purifier for a 500 sq ft room",
+  "difficulty": "medium",
+  "goal": "Find an air purifier rated for at least 500 sq ft, ideally with a HEPA filter, under $250.",
+  "constraints": [
+    "Covers 500+ sq ft",
+    "HEPA filter preferred",
+    "Under $250"
+  ],
+  "start_url": "https://www.amazon.com/s?k=air+purifier+large+room",
+  "expected_steps": [
+    "navigate Amazon",
+    "search air purifier",
+    "filter coverage area and price",
+    "extract top pick"
+  ],
+  "critical_actions": [
+    "amazon.com",
+    "air purifier",
+    "hepa"
+  ],
+  "rubric": "Real air purifier rated 500+ sq ft, HEPA, under $250."
+}

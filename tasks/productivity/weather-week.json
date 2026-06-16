@@ -1,0 +1,24 @@
+{
+  "id": "weather-week",
+  "category": "productivity",
+  "title": "7-day weather forecast for Paris",
+  "difficulty": "easy",
+  "goal": "Get the 7-day weather forecast for Paris, France, with daily highs and lows.",
+  "constraints": [
+    "Source: major weather site",
+    "Include all 7 days"
+  ],
+  "start_url": "https://www.weather.com",
+  "expected_steps": [
+    "navigate weather site",
+    "search Paris",
+    "extract 7-day forecast"
+  ],
+  "critical_actions": [
+    "weather.com",
+    "paris",
+    "monday",
+    "tuesday"
+  ],
+  "rubric": "Reports a 7-day Paris forecast with daily highs/lows from a major weather site."
+}

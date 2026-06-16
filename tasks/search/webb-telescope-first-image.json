@@ -1,0 +1,22 @@
+{
+  "id": "webb-telescope-first-image",
+  "category": "search",
+  "title": "First image released by JWST",
+  "difficulty": "easy",
+  "goal": "Identify the first publicly-released deep-field image from JWST and its release date.",
+  "constraints": [
+    "Source must be NASA, ESA, or major news outlet"
+  ],
+  "start_url": "https://webbtelescope.org/resource-gallery/images",
+  "expected_steps": [
+    "navigate NASA JWST gallery",
+    "extract first deep field",
+    "note release date"
+  ],
+  "critical_actions": [
+    "webb",
+    "deep field",
+    "2022"
+  ],
+  "rubric": "Reports JWST's first deep field (SMACS 0723) and July 2022 release date."
+}

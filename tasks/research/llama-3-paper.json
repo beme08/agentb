@@ -1,0 +1,24 @@
+{
+  "id": "llama-3-paper",
+  "category": "research",
+  "title": "Llama 3 technical report",
+  "difficulty": "medium",
+  "goal": "Find the Llama 3 technical report and report model sizes, training data scale, and benchmark scores for MMLU.",
+  "constraints": [
+    "Source: arXiv or Meta AI site"
+  ],
+  "start_url": "https://arxiv.org/abs/2407.21783",
+  "expected_steps": [
+    "navigate arXiv",
+    "open Llama 3 paper",
+    "extract model sizes, tokens, MMLU"
+  ],
+  "critical_actions": [
+    "arxiv.org",
+    "2407.21783",
+    "llama",
+    "8b",
+    "70b"
+  ],
+  "rubric": "Reports Llama 3 model sizes (8B/70B/405B), training tokens, and MMLU score."
+}

@@ -1,0 +1,23 @@
+{
+  "id": "bitcoin-price-now",
+  "category": "search",
+  "title": "Current Bitcoin price in USD",
+  "difficulty": "easy",
+  "goal": "Find the current price of one Bitcoin in US dollars.",
+  "constraints": [
+    "Use a major exchange or aggregator",
+    "Report price and timestamp"
+  ],
+  "start_url": "https://www.coindesk.com/price/bitcoin/",
+  "expected_steps": [
+    "navigate CoinDesk",
+    "extract BTC/USD price",
+    "note timestamp"
+  ],
+  "critical_actions": [
+    "coindesk.com",
+    "BTC",
+    "$"
+  ],
+  "rubric": "Reports current BTC price in USD with a timestamp."
+}

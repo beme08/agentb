@@ -1,0 +1,24 @@
+{
+  "id": "github-trending-python",
+  "category": "developer",
+  "title": "Top trending Python repos this week",
+  "difficulty": "easy",
+  "goal": "List the top 3 trending Python repositories on GitHub this week.",
+  "constraints": [
+    "Source: github.com/trending",
+    "Language: Python",
+    "Top 3"
+  ],
+  "start_url": "https://github.com/trending/python?since=weekly",
+  "expected_steps": [
+    "navigate GitHub trending",
+    "set language Python",
+    "extract top 3"
+  ],
+  "critical_actions": [
+    "github.com",
+    "trending",
+    "python"
+  ],
+  "rubric": "Lists the top 3 trending Python repos from github.com/trending."
+}

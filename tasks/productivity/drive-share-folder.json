@@ -1,0 +1,26 @@
+{
+  "id": "drive-share-folder",
+  "category": "productivity",
+  "title": "Share a Google Drive folder with view access",
+  "difficulty": "medium",
+  "goal": "Create a new folder in Google Drive named 'AgentBench-K reports' and share it with view-only access for a given email.",
+  "constraints": [
+    "Folder name exact",
+    "Access level: viewer"
+  ],
+  "start_url": "https://drive.google.com",
+  "expected_steps": [
+    "navigate Drive",
+    "create folder",
+    "rename",
+    "click share",
+    "set viewer permission",
+    "send invite"
+  ],
+  "critical_actions": [
+    "drive.google.com",
+    "agentbench-k reports",
+    "viewer"
+  ],
+  "rubric": "Confirms folder 'AgentBench-K reports' exists with a viewer share."
+}

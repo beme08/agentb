@@ -1,0 +1,21 @@
+{
+  "id": "docker-hub-pull",
+  "category": "developer",
+  "title": "Docker pull command for postgres:16",
+  "difficulty": "easy",
+  "goal": "Find the official Docker pull command for the postgres:16 image from Docker Hub.",
+  "constraints": [
+    "Source: hub.docker.com"
+  ],
+  "start_url": "https://hub.docker.com/_/postgres",
+  "expected_steps": [
+    "navigate Docker Hub postgres",
+    "extract pull command"
+  ],
+  "critical_actions": [
+    "hub.docker.com",
+    "postgres",
+    "docker pull"
+  ],
+  "rubric": "Reports `docker pull postgres:16` from hub.docker.com."
+}

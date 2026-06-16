@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AgentBench-K Task",
+  "type": "object",
+  "required": ["id", "category", "goal", "start_url", "expected_steps", "critical_actions"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "category": {
+      "type": "string",
+      "enum": ["search", "shopping", "research", "productivity", "developer"]
+    },
+    "title": { "type": "string" },
+    "difficulty": { "type": "string", "enum": ["easy", "medium", "hard"] },
+    "goal": { "type": "string", "description": "Natural-language task given to the agent." },
+    "constraints": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Hard requirements the agent must respect."
+    },
+    "start_url": { "type": "string" },
+    "expected_steps": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Reference action sequence, each starting with a verb (search, click, navigate, extract, ...)."
+    },
+    "critical_actions": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Substring needles that must appear somewhere in the trace (action/target/detail joined)."
+    },
+    "final_answer": { "type": "string" },
+    "final_answer_check": {
+      "type": "object",
+      "properties": {
+        "mode": { "type": "string", "enum": ["exact", "contains_all", "contains_any", "regex"] },
+        "value": {}
+      },
+      "required": ["mode", "value"]
+    },
+    "rubric": { "type": "string" },
+    "notes": { "type": "string" }
+  }
+}

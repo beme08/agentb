@@ -1,0 +1,23 @@
+{
+  "id": "iphone-latest-model",
+  "category": "search",
+  "title": "Apple's current flagship iPhone",
+  "difficulty": "easy",
+  "goal": "Identify Apple's currently-shipping flagship iPhone model and starting price.",
+  "constraints": [
+    "Source must be apple.com",
+    "Report the model name and starting price"
+  ],
+  "start_url": "https://www.apple.com/iphone/",
+  "expected_steps": [
+    "navigate apple.com/iphone",
+    "extract current flagship",
+    "extract price"
+  ],
+  "critical_actions": [
+    "apple.com",
+    "iphone",
+    "$"
+  ],
+  "rubric": "Reports current flagship iPhone model and starting price from apple.com."
+}

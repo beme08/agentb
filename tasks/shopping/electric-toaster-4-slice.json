@@ -1,0 +1,25 @@
+{
+  "id": "electric-toaster-4-slice",
+  "category": "shopping",
+  "title": "4-slice toaster with high ratings",
+  "difficulty": "easy",
+  "goal": "Find a well-reviewed 4-slice toaster under $80.",
+  "constraints": [
+    "4 slots",
+    "Under $80",
+    "At least 4.3 stars"
+  ],
+  "start_url": "https://www.amazon.com/s?k=4+slice+toaster",
+  "expected_steps": [
+    "navigate Amazon",
+    "search 4-slice toaster",
+    "filter rating and price",
+    "extract product"
+  ],
+  "critical_actions": [
+    "amazon.com",
+    "4-slice",
+    "toaster"
+  ],
+  "rubric": "Real 4-slice toaster under $80 with 4.3+ star average."
+}

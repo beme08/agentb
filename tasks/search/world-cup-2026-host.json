@@ -1,0 +1,23 @@
+{
+  "id": "world-cup-2026-host",
+  "category": "search",
+  "title": "Host cities for FIFA World Cup 2026",
+  "difficulty": "easy",
+  "goal": "List the host cities for the 2026 FIFA World Cup.",
+  "constraints": [
+    "Source must be FIFA or major sports outlet",
+    "List at least 10 cities"
+  ],
+  "start_url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup",
+  "expected_steps": [
+    "navigate Wikipedia",
+    "extract host cities section",
+    "list cities"
+  ],
+  "critical_actions": [
+    "wikipedia.org",
+    "2026",
+    "host"
+  ],
+  "rubric": "Lists at least 10 of the 16 host cities for the 2026 World Cup."
+}

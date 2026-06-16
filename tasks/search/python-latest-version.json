@@ -1,0 +1,21 @@
+{
+  "id": "python-latest-version",
+  "category": "search",
+  "title": "Latest stable Python version",
+  "difficulty": "easy",
+  "goal": "Find the latest stable Python release version and release date.",
+  "constraints": [
+    "Source must be python.org or PEP index"
+  ],
+  "start_url": "https://www.python.org/downloads/",
+  "expected_steps": [
+    "navigate python.org downloads",
+    "extract latest version",
+    "note release date"
+  ],
+  "critical_actions": [
+    "python.org",
+    "download"
+  ],
+  "rubric": "Reports the latest stable Python version and release date."
+}

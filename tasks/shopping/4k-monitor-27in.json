@@ -1,0 +1,26 @@
+{
+  "id": "4k-monitor-27in",
+  "category": "shopping",
+  "title": "27-inch 4K monitor for coding",
+  "difficulty": "medium",
+  "goal": "Find a 27-inch 4K IPS monitor suitable for coding (good text clarity) under $450.",
+  "constraints": [
+    "27 inch",
+    "4K (3840x2160)",
+    "IPS panel preferred",
+    "Under $450"
+  ],
+  "start_url": "https://www.rtings.com/monitor/reviews/best/by-usage/desktop",
+  "expected_steps": [
+    "navigate RTINGS monitor reviews",
+    "filter 27-inch 4K",
+    "verify text clarity score",
+    "extract price"
+  ],
+  "critical_actions": [
+    "rtings.com",
+    "4k",
+    "ips"
+  ],
+  "rubric": "Real 27\" 4K IPS monitor under $450 with strong text-clarity rating."
+}

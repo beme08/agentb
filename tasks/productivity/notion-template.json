@@ -1,0 +1,24 @@
+{
+  "id": "notion-template",
+  "category": "productivity",
+  "title": "Find a Notion OKR template",
+  "difficulty": "easy",
+  "goal": "Find a free, public Notion template for tracking team OKRs.",
+  "constraints": [
+    "Source: notion.so or notion.com templates gallery",
+    "Free, public"
+  ],
+  "start_url": "https://www.notion.so/templates/category/okrs",
+  "expected_steps": [
+    "navigate Notion templates",
+    "filter OKR",
+    "open template",
+    "extract title and URL"
+  ],
+  "critical_actions": [
+    "notion.so",
+    "okr",
+    "template"
+  ],
+  "rubric": "Reports a real, free, public Notion OKR template title and URL."
+}

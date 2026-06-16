@@ -1,0 +1,23 @@
+{
+  "id": "bookmark-manager",
+  "category": "productivity",
+  "title": "Find a privacy-respecting bookmark manager",
+  "difficulty": "medium",
+  "goal": "Find a self-hosted or E2E-encrypted bookmark manager recommended on Hacker News.",
+  "constraints": [
+    "Privacy-respecting",
+    "Source: Hacker News or reputable review"
+  ],
+  "start_url": "https://hn.algolia.com/?q=bookmark+manager+self+hosted",
+  "expected_steps": [
+    "navigate HN search",
+    "open top thread",
+    "extract top recommendation"
+  ],
+  "critical_actions": [
+    "hn.algolia.com",
+    "bookmark",
+    "self-hosted"
+  ],
+  "rubric": "Reports a privacy-respecting bookmark manager from an HN discussion."
+}

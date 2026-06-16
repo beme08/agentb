@@ -1,0 +1,21 @@
+{
+  "id": "ceo-of-nvidia",
+  "category": "search",
+  "title": "Who is the current CEO of NVIDIA?",
+  "difficulty": "easy",
+  "goal": "Look up the current CEO of NVIDIA and report their name and start date.",
+  "constraints": [
+    "Source must be NVIDIA's site or a major news outlet"
+  ],
+  "start_url": "https://www.nvidia.com/en-us/about-nvidia/",
+  "expected_steps": [
+    "navigate NVIDIA about page",
+    "extract CEO name",
+    "note start date"
+  ],
+  "critical_actions": [
+    "nvidia.com",
+    "CEO"
+  ],
+  "rubric": "Reports the current NVIDIA CEO's name and approximate start date."
+}

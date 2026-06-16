@@ -1,0 +1,25 @@
+{
+  "id": "recipe-chicken-thighs",
+  "category": "productivity",
+  "title": "Find a quick weeknight chicken thigh recipe",
+  "difficulty": "easy",
+  "goal": "Find a highly-rated weeknight recipe for boneless chicken thighs that takes under 30 minutes.",
+  "constraints": [
+    "Under 30 minutes",
+    "Boneless thighs",
+    "At least 4.5 stars"
+  ],
+  "start_url": "https://www.seriouseats.com/search?q=chicken+thighs+weeknight",
+  "expected_steps": [
+    "navigate Serious Eats",
+    "search chicken thighs weeknight",
+    "filter rating and time",
+    "extract recipe"
+  ],
+  "critical_actions": [
+    "seriouseats.com",
+    "chicken thighs",
+    "30 minutes"
+  ],
+  "rubric": "Real, 4.5+ star weeknight chicken thigh recipe under 30 min."
+}

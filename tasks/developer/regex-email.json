@@ -1,0 +1,22 @@
+{
+  "id": "regex-email",
+  "category": "developer",
+  "title": "Find a simple email regex",
+  "difficulty": "easy",
+  "goal": "Find a commonly-recommended simple regular expression for matching email addresses and report the pattern.",
+  "constraints": [
+    "Source: stackoverflow, MDN, or OWASP"
+  ],
+  "start_url": "https://stackoverflow.com/questions/201323/how-can-i-validate-an-email-address-using-a-regular-expression",
+  "expected_steps": [
+    "navigate SO",
+    "find top answer",
+    "extract pattern"
+  ],
+  "critical_actions": [
+    "stackoverflow.com",
+    "email",
+    "@"
+  ],
+  "rubric": "Reports a working email regex pattern from a reputable source."
+}

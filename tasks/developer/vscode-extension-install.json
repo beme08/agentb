@@ -1,0 +1,22 @@
+{
+  "id": "vscode-extension-install",
+  "category": "developer",
+  "title": "Install the Prettier VSCode extension",
+  "difficulty": "easy",
+  "goal": "Find the marketplace listing for the Prettier VSCode extension and report its install command.",
+  "constraints": [
+    "Source: marketplace.visualstudio.com"
+  ],
+  "start_url": "https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode",
+  "expected_steps": [
+    "navigate marketplace",
+    "open Prettier listing",
+    "extract install command"
+  ],
+  "critical_actions": [
+    "marketplace.visualstudio.com",
+    "prettier",
+    "code --install-extension"
+  ],
+  "rubric": "Reports the marketplace listing and `code --install-extension` command."
+}

@@ -1,0 +1,26 @@
+{
+  "id": "cal-event-create",
+  "category": "productivity",
+  "title": "Add a calendar event for next Monday at 2pm",
+  "difficulty": "medium",
+  "goal": "Add a calendar event titled 'Project sync' on next Monday at 2pm for 30 minutes on Google Calendar.",
+  "constraints": [
+    "Use Google Calendar",
+    "Event title exactly 'Project sync'",
+    "Next Monday at 14:00, 30 min"
+  ],
+  "start_url": "https://calendar.google.com",
+  "expected_steps": [
+    "navigate Google Calendar",
+    "click create",
+    "enter title",
+    "set date and time",
+    "save"
+  ],
+  "critical_actions": [
+    "calendar.google.com",
+    "project sync",
+    "save"
+  ],
+  "rubric": "Confirms a 'Project sync' event was scheduled for next Monday 14:00, 30 min."
+}

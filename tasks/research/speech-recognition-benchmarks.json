@@ -1,0 +1,24 @@
+{
+  "id": "speech-recognition-benchmarks",
+  "category": "research",
+  "title": "Compare LibriSpeech and Common Voice",
+  "difficulty": "hard",
+  "goal": "Summarize the differences between LibriSpeech and Common Voice as ASR benchmarks.",
+  "constraints": [
+    "Source: official project sites or papers",
+    "Cover data source, license, size"
+  ],
+  "start_url": "https://www.openslr.org/12",
+  "expected_steps": [
+    "navigate LibriSpeech",
+    "navigate Common Voice site",
+    "compare size, license, source"
+  ],
+  "critical_actions": [
+    "openslr.org",
+    "common voice",
+    "license",
+    "hours"
+  ],
+  "rubric": "Compares LibriSpeech (read audio, public domain) vs Common Voice (crowdsourced, CC0) on size and license."
+}

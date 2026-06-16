@@ -1,0 +1,21 @@
+{
+  "id": "us-president-current",
+  "category": "search",
+  "title": "Current US President",
+  "difficulty": "easy",
+  "goal": "Identify the current US President and report their inauguration date.",
+  "constraints": [
+    "Source must be whitehouse.gov or major news outlet"
+  ],
+  "start_url": "https://www.whitehouse.gov/administration/",
+  "expected_steps": [
+    "navigate whitehouse.gov",
+    "extract president name",
+    "note inauguration date"
+  ],
+  "critical_actions": [
+    "whitehouse.gov",
+    "president"
+  ],
+  "rubric": "Reports the current US president and inauguration date from whitehouse.gov."
+}

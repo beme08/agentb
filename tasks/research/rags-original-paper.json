@@ -1,0 +1,22 @@
+{
+  "id": "rags-original-paper",
+  "category": "research",
+  "title": "Original RAG paper citation",
+  "difficulty": "medium",
+  "goal": "Find the original Retrieval-Augmented Generation paper and report its title, authors, and year.",
+  "constraints": [
+    "Source must be arXiv or ACL Anthology"
+  ],
+  "start_url": "https://arxiv.org/abs/2005.11401",
+  "expected_steps": [
+    "navigate arXiv",
+    "open paper 2005.11401",
+    "extract title, authors, year"
+  ],
+  "critical_actions": [
+    "arxiv.org",
+    "2005.11401",
+    "lewis"
+  ],
+  "rubric": "Identifies Lewis et al. 2020 RAG paper with title and authors."
+}

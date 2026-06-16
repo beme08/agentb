@@ -1,0 +1,35 @@
+{
+  "id": "good-first-issue-transcription-repo",
+  "category": "developer",
+  "title": "Find a good-first-issue in a transcription repo and propose a fix",
+  "difficulty": "hard",
+  "goal": "Find a GitHub issue labeled 'good first issue' in a transcription repository and propose a fix.",
+  "constraints": [
+    "Repository must be related to audio/video transcription",
+    "Issue must be labeled 'good first issue'",
+    "Proposed fix must be plausible (mentions specific file, function, or test)"
+  ],
+  "start_url": "https://github.com/search?q=transcription+label%3A%22good+first+issue%22&type=issues",
+  "expected_steps": [
+    "navigate GitHub",
+    "search transcription good first issue",
+    "open issue",
+    "read issue body",
+    "navigate to repository",
+    "inspect relevant source file",
+    "draft proposed fix"
+  ],
+  "critical_actions": [
+    "github.com",
+    "good first issue",
+    "transcription",
+    "fix"
+  ],
+  "final_answer": "Issue: openai/whisper #2456 'Add VAD pre-filter option'. Fix: extend transcribe() to accept vad_filter=True and call webrtcvad on the audio array before decoding, gated by a new --vad-filter CLI flag in transcribe.py.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": ["issue", "transcribe", "vad"]
+  },
+  "rubric": "Real labeled issue, in a real transcription repo, with a concrete fix that names a file, function, or change.",
+  "notes": "Snapshot reference. Live grader accepts any concrete fix referencing repository files."
+}

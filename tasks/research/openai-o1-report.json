@@ -1,0 +1,22 @@
+{
+  "id": "openai-o1-report",
+  "category": "research",
+  "title": "OpenAI o1 system card",
+  "difficulty": "medium",
+  "goal": "Find the OpenAI o1 system card and report its key safety findings.",
+  "constraints": [
+    "Source: openai.com or arXiv mirror"
+  ],
+  "start_url": "https://openai.com/index/openai-o1-system-card/",
+  "expected_steps": [
+    "navigate OpenAI",
+    "open o1 system card",
+    "extract safety findings"
+  ],
+  "critical_actions": [
+    "openai.com",
+    "o1",
+    "system card"
+  ],
+  "rubric": "Reports key o1 safety findings (jailbreak resistance, bio/chem evals)."
+}

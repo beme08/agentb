@@ -1,0 +1,23 @@
+{
+  "id": "distance-earth-moon",
+  "category": "search",
+  "title": "Current distance Earth to Moon",
+  "difficulty": "easy",
+  "goal": "Find the current average distance from the Earth to the Moon in kilometers.",
+  "constraints": [
+    "Cite a reputable source",
+    "Report in km"
+  ],
+  "start_url": "https://en.wikipedia.org/wiki/Moon",
+  "expected_steps": [
+    "navigate Wikipedia Moon",
+    "extract distance",
+    "note units"
+  ],
+  "critical_actions": [
+    "wikipedia.org",
+    "moon",
+    "km"
+  ],
+  "rubric": "Reports Earth-Moon distance in km with a source."
+}

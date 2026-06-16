@@ -1,0 +1,22 @@
+{
+  "id": "pypi-package-latest",
+  "category": "developer",
+  "title": "Latest version of requests",
+  "difficulty": "easy",
+  "goal": "Find the latest stable version of the `requests` Python package and the Python versions it supports.",
+  "constraints": [
+    "Source: pypi.org"
+  ],
+  "start_url": "https://pypi.org/project/requests/",
+  "expected_steps": [
+    "navigate pypi",
+    "extract latest version",
+    "note python support"
+  ],
+  "critical_actions": [
+    "pypi.org",
+    "requests",
+    "version"
+  ],
+  "rubric": "Reports the latest requests version and supported Python versions."
+}

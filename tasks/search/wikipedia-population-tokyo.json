@@ -1,0 +1,30 @@
+{
+  "id": "wikipedia-population-tokyo",
+  "category": "search",
+  "title": "Find the current population of Tokyo from Wikipedia",
+  "difficulty": "easy",
+  "goal": "Look up the current population of Tokyo on Wikipedia and report the most recent estimate.",
+  "constraints": [
+    "Source must be Wikipedia",
+    "Report the most recent figure available",
+    "Cite the year of the estimate"
+  ],
+  "start_url": "https://en.wikipedia.org/wiki/Tokyo",
+  "expected_steps": [
+    "navigate Wikipedia Tokyo",
+    "extract population from infobox",
+    "note reference year"
+  ],
+  "critical_actions": [
+    "wikipedia.org",
+    "tokyo",
+    "population"
+  ],
+  "final_answer": "Tokyo metropolitan area population: 41.0 million (2023 estimate).",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": ["tokyo", "million", "2023"]
+  },
+  "rubric": "Reports a recent population figure for Tokyo with a year, sourced from Wikipedia.",
+  "notes": "Wikipedia figures shift; rubric accepts any post-2020 figure with a year."
+}

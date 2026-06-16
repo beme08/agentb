@@ -1,0 +1,23 @@
+{
+  "id": "current-weather-sf",
+  "category": "search",
+  "title": "Current weather in San Francisco",
+  "difficulty": "easy",
+  "goal": "Find the current temperature and conditions in San Francisco.",
+  "constraints": [
+    "Use a major weather site",
+    "Report temp in F and conditions"
+  ],
+  "start_url": "https://www.weather.com",
+  "expected_steps": [
+    "navigate weather site",
+    "search San Francisco",
+    "extract temperature and conditions"
+  ],
+  "critical_actions": [
+    "weather.com",
+    "san francisco",
+    "temperature"
+  ],
+  "rubric": "Reports current SF temperature and conditions from a major weather site."
+}

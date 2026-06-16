@@ -1,0 +1,23 @@
+{
+  "id": "stock-price-apple",
+  "category": "search",
+  "title": "Current Apple stock price",
+  "difficulty": "easy",
+  "goal": "Find the current trading price of AAPL.",
+  "constraints": [
+    "Use a financial data site",
+    "Report the price and as-of time"
+  ],
+  "start_url": "https://finance.yahoo.com/quote/AAPL/",
+  "expected_steps": [
+    "navigate Yahoo Finance",
+    "search AAPL",
+    "extract price and timestamp"
+  ],
+  "critical_actions": [
+    "finance.yahoo.com",
+    "AAPL",
+    "$"
+  ],
+  "rubric": "Reports current AAPL price and as-of time from a financial site."
+}

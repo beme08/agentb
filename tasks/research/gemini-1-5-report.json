@@ -1,0 +1,23 @@
+{
+  "id": "gemini-1-5-report",
+  "category": "research",
+  "title": "Gemini 1.5 technical report",
+  "difficulty": "medium",
+  "goal": "Find the Gemini 1.5 technical report and report the context window size.",
+  "constraints": [
+    "Source: arXiv or DeepMind blog"
+  ],
+  "start_url": "https://arxiv.org/abs/2403.05530",
+  "expected_steps": [
+    "navigate arXiv",
+    "open Gemini 1.5 paper",
+    "extract context window"
+  ],
+  "critical_actions": [
+    "arxiv.org",
+    "2403.05530",
+    "gemini",
+    "1.5"
+  ],
+  "rubric": "Reports Gemini 1.5's 1M (Pro) / 2M (Flash) token context window."
+}

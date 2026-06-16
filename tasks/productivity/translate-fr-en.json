@@ -1,0 +1,25 @@
+{
+  "id": "translate-fr-en",
+  "category": "productivity",
+  "title": "Translate a French sentence to English",
+  "difficulty": "easy",
+  "goal": "Translate 'La recherche en intelligence artificielle progresse rapidement.' from French to English using DeepL.",
+  "constraints": [
+    "Source: deepl.com",
+    "Provide the English translation"
+  ],
+  "start_url": "https://www.deepl.com/translator",
+  "expected_steps": [
+    "navigate DeepL",
+    "set source French, target English",
+    "paste sentence",
+    "extract translation"
+  ],
+  "critical_actions": [
+    "deepl.com",
+    "french",
+    "english",
+    "research"
+  ],
+  "rubric": "Produces the DeepL English translation of the French sentence."
+}

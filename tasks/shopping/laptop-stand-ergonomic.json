@@ -1,0 +1,25 @@
+{
+  "id": "laptop-stand-ergonomic",
+  "category": "shopping",
+  "title": "Ergonomic laptop stand for a 16-inch laptop",
+  "difficulty": "easy",
+  "goal": "Find an ergonomic laptop stand that supports a 16-inch MacBook Pro, under $80.",
+  "constraints": [
+    "Fits 16-inch laptop",
+    "Under $80",
+    "Adjustable height"
+  ],
+  "start_url": "https://www.amazon.com/s?k=laptop+stand+ergonomic",
+  "expected_steps": [
+    "navigate Amazon",
+    "search laptop stand",
+    "filter size and price",
+    "extract top pick"
+  ],
+  "critical_actions": [
+    "amazon.com",
+    "laptop stand",
+    "16"
+  ],
+  "rubric": "Real ergonomic laptop stand under $80 that fits a 16-inch laptop."
+}

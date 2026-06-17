@@ -26,5 +26,12 @@
     "rating"
   ],
   "rubric": "Real standing desk converter under $300 with 4.5+ star average.",
-  "notes": "Example: Vari Electric Standing Desk Converter. Any product meeting all constraints passes."
+  "notes": "Example: Vari Electric Standing Desk Converter. Any product meeting all constraints passes.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "standing desk",
+      "converter"
+    ]
+  }
 }

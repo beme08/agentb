@@ -22,5 +22,12 @@
     "4k",
     "ips"
   ],
-  "rubric": "Real 27\" 4K IPS monitor under $450 with strong text-clarity rating."
+  "rubric": "Real 27\" 4K IPS monitor under $450 with strong text-clarity rating.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "monitor",
+      "4k"
+    ]
+  }
 }

@@ -19,5 +19,12 @@
     "augmented",
     "generation"
   ],
-  "rubric": "Quotes or paraphrases a clear RAG definition and cites the source."
+  "rubric": "Quotes or paraphrases a clear RAG definition and cites the source.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "retrieval",
+      "augmented"
+    ]
+  }
 }

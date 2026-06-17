@@ -19,5 +19,12 @@
     "iphone",
     "$"
   ],
-  "rubric": "Reports current flagship iPhone model and starting price from apple.com."
+  "rubric": "Reports current flagship iPhone model and starting price from apple.com.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "iphone",
+      "$"
+    ]
+  }
 }

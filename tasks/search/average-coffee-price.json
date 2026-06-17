@@ -19,5 +19,12 @@
     "latte",
     "new york"
   ],
-  "rubric": "Reports NYC latte average in USD with a source."
+  "rubric": "Reports NYC latte average in USD with a source.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "latte",
+      "$"
+    ]
+  }
 }

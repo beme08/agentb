@@ -20,5 +20,12 @@
     "okr",
     "template"
   ],
-  "rubric": "Reports a real, free, public Notion OKR template title and URL."
+  "rubric": "Reports a real, free, public Notion OKR template title and URL.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "notion",
+      "okr"
+    ]
+  }
 }

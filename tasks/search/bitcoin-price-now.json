@@ -19,5 +19,12 @@
     "BTC",
     "$"
   ],
-  "rubric": "Reports current BTC price in USD with a timestamp."
+  "rubric": "Reports current BTC price in USD with a timestamp.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "bitcoin",
+      "$"
+    ]
+  }
 }

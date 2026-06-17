@@ -1,0 +1,39 @@
+name: Benchmark CI
+
+on:
+  pull_request:
+    paths:
+      - "tasks/**"
+      - "agents/**"
+      - "evaluators/**"
+      - "run_benchmark.py"
+      - "scripts/**"
+  push:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Validate task schemas
+        run: python scripts/validate_tasks.py
+      - name: Run unit tests
+        run: python -m pytest tests/ -q
+      - name: Run stub benchmark (smoke)
+        run: python run_benchmark.py --agent stub --all --out traces/ci-results.json
+      - name: Generate leaderboard
+        run: python leaderboard/generate.py traces/ci-results.json > leaderboard/LEADERBOARD.md
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: benchmark-results
+          path: traces/ci-results.json

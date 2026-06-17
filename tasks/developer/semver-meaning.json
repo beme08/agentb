@@ -18,5 +18,13 @@
     "minor",
     "patch"
   ],
-  "rubric": "Quotes or paraphrases the SemVer spec for major/minor/patch."
+  "rubric": "Quotes or paraphrases the SemVer spec for major/minor/patch.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "major",
+      "minor",
+      "patch"
+    ]
+  }
 }

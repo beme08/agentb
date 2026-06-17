@@ -21,5 +21,11 @@
     "garden",
     "mother"
   ],
-  "rubric": "Real garden-themed gift for a mother under $50 with fast shipping."
+  "rubric": "Real garden-themed gift for a mother under $50 with fast shipping.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "garden"
+    ]
+  }
 }

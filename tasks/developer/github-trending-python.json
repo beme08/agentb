@@ -20,5 +20,12 @@
     "trending",
     "python"
   ],
-  "rubric": "Lists the top 3 trending Python repos from github.com/trending."
+  "rubric": "Lists the top 3 trending Python repos from github.com/trending.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "github",
+      "python"
+    ]
+  }
 }

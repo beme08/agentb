@@ -19,5 +19,12 @@
     "AAPL",
     "$"
   ],
-  "rubric": "Reports current AAPL price and as-of time from a financial site."
+  "rubric": "Reports current AAPL price and as-of time from a financial site.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "AAPL",
+      "$"
+    ]
+  }
 }

@@ -21,5 +21,12 @@
     "english",
     "research"
   ],
-  "rubric": "Produces the DeepL English translation of the French sentence."
+  "rubric": "Produces the DeepL English translation of the French sentence.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "research",
+      "artificial intelligence"
+    ]
+  }
 }

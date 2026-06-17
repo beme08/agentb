@@ -18,5 +18,12 @@
     "deep field",
     "2022"
   ],
-  "rubric": "Reports JWST's first deep field (SMACS 0723) and July 2022 release date."
+  "rubric": "Reports JWST's first deep field (SMACS 0723) and July 2022 release date.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "webb",
+      "deep field"
+    ]
+  }
 }

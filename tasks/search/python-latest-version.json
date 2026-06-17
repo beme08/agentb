@@ -17,5 +17,12 @@
     "python.org",
     "download"
   ],
-  "rubric": "Reports the latest stable Python version and release date."
+  "rubric": "Reports the latest stable Python version and release date.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "python",
+      "3."
+    ]
+  }
 }

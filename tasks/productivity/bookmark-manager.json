@@ -19,5 +19,11 @@
     "bookmark",
     "self-hosted"
   ],
-  "rubric": "Reports a privacy-respecting bookmark manager from an HN discussion."
+  "rubric": "Reports a privacy-respecting bookmark manager from an HN discussion.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "bookmark"
+    ]
+  }
 }

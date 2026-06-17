@@ -18,5 +18,12 @@
     "o1",
     "system card"
   ],
-  "rubric": "Reports key o1 safety findings (jailbreak resistance, bio/chem evals)."
+  "rubric": "Reports key o1 safety findings (jailbreak resistance, bio/chem evals).",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "o1",
+      "system"
+    ]
+  }
 }

@@ -19,5 +19,11 @@
     "-A",
     "-o wide"
   ],
-  "rubric": "Reports `kubectl get pods -A -o wide` from the official kubectl docs."
+  "rubric": "Reports `kubectl get pods -A -o wide` from the official kubectl docs.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "kubectl get pods"
+    ]
+  }
 }

@@ -22,5 +22,12 @@
     "agentbench-k reports",
     "viewer"
   ],
-  "rubric": "Confirms folder 'AgentBench-K reports' exists with a viewer share."
+  "rubric": "Confirms folder 'AgentBench-K reports' exists with a viewer share.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "agentbench-k reports",
+      "viewer"
+    ]
+  }
 }

@@ -20,5 +20,11 @@
     "mail.google.com",
     "unsubscribe"
   ],
-  "rubric": "Confirms an unsubscribe was performed (not just delete) on a marketing email."
+  "rubric": "Confirms an unsubscribe was performed (not just delete) on a marketing email.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "unsubscrib"
+    ]
+  }
 }

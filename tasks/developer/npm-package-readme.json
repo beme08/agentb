@@ -19,5 +19,12 @@
     "install",
     "npm install"
   ],
-  "rubric": "Reports the correct `npm install axios` install command from the official source."
+  "rubric": "Reports the correct `npm install axios` install command from the official source.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "npm install",
+      "axios"
+    ]
+  }
 }

@@ -21,5 +21,12 @@
     "chicken thighs",
     "30 minutes"
   ],
-  "rubric": "Real, 4.5+ star weeknight chicken thigh recipe under 30 min."
+  "rubric": "Real, 4.5+ star weeknight chicken thigh recipe under 30 min.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "chicken",
+      "minute"
+    ]
+  }
 }

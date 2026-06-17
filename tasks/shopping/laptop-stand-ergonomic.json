@@ -21,5 +21,12 @@
     "laptop stand",
     "16"
   ],
-  "rubric": "Real ergonomic laptop stand under $80 that fits a 16-inch laptop."
+  "rubric": "Real ergonomic laptop stand under $80 that fits a 16-inch laptop.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "laptop",
+      "stand"
+    ]
+  }
 }

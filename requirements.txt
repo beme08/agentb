@@ -1,8 +1,9 @@
 # Core
 pytest>=7.0
+jsonschema>=4.0
 
-# Agents (install only the ones you need)
-# browser-use
+# Real agents (install only the ones you need)
+openai>=1.0            # OpenRouter + OpenAI CUA
+# browser-use>=0.1
 # playwright>=1.40
-# openai>=1.0
 # langchain-openai>=0.1

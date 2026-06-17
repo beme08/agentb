@@ -21,5 +21,12 @@
     "espresso",
     "frother"
   ],
-  "rubric": "Real espresso machine under $500 with steam wand, 4+ stars."
+  "rubric": "Real espresso machine under $500 with steam wand, 4+ stars.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "espresso",
+      "steam"
+    ]
+  }
 }

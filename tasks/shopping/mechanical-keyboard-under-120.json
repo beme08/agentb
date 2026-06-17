@@ -7,14 +7,17 @@
   "constraints": [
     "Under $120",
     "Hot-swappable",
-    "Wireless (BT or 2.4GHz)"
+    "Wireless (BT or 2.4GHz)",
+    "Product must currently be purchasable"
   ],
   "start_url": "https://www.amazon.com/s?k=mechanical+keyboard+hot+swap+wireless",
   "expected_steps": [
     "navigate Amazon",
     "search mechanical keyboard hot swap wireless",
-    "apply price filter",
-    "verify specs on listing"
+    "apply price filter under 120",
+    "open product page",
+    "verify hot-swap and wireless in listing",
+    "extract price, brand, model"
   ],
   "critical_actions": [
     "amazon.com",
@@ -22,5 +25,11 @@
     "wireless",
     "$"
   ],
-  "rubric": "Real in-stock mechanical keyboard under $120 with hot-swap + wireless."
+  "final_answer": "Keychron K8 Pro, $114, hot-swappable, Bluetooth + 2.4GHz wireless",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": ["hot-swap", "wireless", "1"]
+  },
+  "rubric": "Identifies a real, in-stock mechanical keyboard under $120 with both hot-swap and wireless features.",
+  "notes": "Example: Keychron K8 Pro. Any equivalent product meeting all three constraints passes."
 }

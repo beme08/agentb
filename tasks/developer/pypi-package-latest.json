@@ -18,5 +18,12 @@
     "requests",
     "version"
   ],
-  "rubric": "Reports the latest requests version and supported Python versions."
+  "rubric": "Reports the latest requests version and supported Python versions.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "requests",
+      "pypi"
+    ]
+  }
 }

@@ -20,5 +20,13 @@
     "noise-cancelling",
     "wireless"
   ],
-  "rubric": "Highest-rated ANC wireless headphones under $300 from a review site."
+  "rubric": "Highest-rated ANC wireless headphones under $300 from a review site.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "headphone",
+      "noise-cancelling",
+      "wireless"
+    ]
+  }
 }

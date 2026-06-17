@@ -17,5 +17,12 @@
     "postgres",
     "docker pull"
   ],
-  "rubric": "Reports `docker pull postgres:16` from hub.docker.com."
+  "rubric": "Reports `docker pull postgres:16` from hub.docker.com.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "docker pull",
+      "postgres"
+    ]
+  }
 }

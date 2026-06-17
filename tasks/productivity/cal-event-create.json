@@ -22,5 +22,11 @@
     "project sync",
     "save"
   ],
-  "rubric": "Confirms a 'Project sync' event was scheduled for next Monday 14:00, 30 min."
+  "rubric": "Confirms a 'Project sync' event was scheduled for next Monday 14:00, 30 min.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "project sync"
+    ]
+  }
 }

@@ -17,5 +17,11 @@
     "whitehouse.gov",
     "president"
   ],
-  "rubric": "Reports the current US president and inauguration date from whitehouse.gov."
+  "rubric": "Reports the current US president and inauguration date from whitehouse.gov.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "president"
+    ]
+  }
 }

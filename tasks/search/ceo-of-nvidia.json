@@ -17,5 +17,12 @@
     "nvidia.com",
     "CEO"
   ],
-  "rubric": "Reports the current NVIDIA CEO's name and approximate start date."
+  "rubric": "Reports the current NVIDIA CEO's name and approximate start date.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "nvidia",
+      "ceo"
+    ]
+  }
 }

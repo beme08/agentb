@@ -22,5 +22,12 @@
     "local",
     "free"
   ],
-  "rubric": "Identifies a free, ideally local-processing PDF compression tool."
+  "rubric": "Identifies a free, ideally local-processing PDF compression tool.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "pdf",
+      "compress"
+    ]
+  }
 }

@@ -18,5 +18,13 @@
     "2312.00752",
     "mamba"
   ],
-  "rubric": "Reports the Mamba paper (Gu & Dao 2023) and its selective SSM contribution."
+  "rubric": "Reports the Mamba paper (Gu & Dao 2023) and its selective SSM contribution.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "mamba",
+      "gu",
+      "dao"
+    ]
+  }
 }

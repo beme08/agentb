@@ -19,5 +19,12 @@
     "git clone",
     "pip install"
   ],
-  "rubric": "Reports the correct clone URL and first three setup commands from the README."
+  "rubric": "Reports the correct clone URL and first three setup commands from the README.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "git clone",
+      "openai/whisper"
+    ]
+  }
 }

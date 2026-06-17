@@ -18,5 +18,12 @@
     "prettier",
     "code --install-extension"
   ],
-  "rubric": "Reports the marketplace listing and `code --install-extension` command."
+  "rubric": "Reports the marketplace listing and `code --install-extension` command.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "prettier",
+      "code --install-extension"
+    ]
+  }
 }

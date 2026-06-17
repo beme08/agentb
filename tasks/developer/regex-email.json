@@ -18,5 +18,9 @@
     "email",
     "@"
   ],
-  "rubric": "Reports a working email regex pattern from a reputable source."
+  "rubric": "Reports a working email regex pattern from a reputable source.",
+  "final_answer_check": {
+    "mode": "regex",
+    "value": "[\\w.+-]+@[\\w-]+\\.[\\w.-]+"
+  }
 }

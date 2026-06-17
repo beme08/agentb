@@ -21,7 +21,14 @@
       "nameerror",
       "defined"
     ],
-    "rubric": "Diagnoses NameError as a missing definition/typo and suggests defining the name before use."
+    "rubric": "Diagnoses NameError as a missing definition/typo and suggests defining the name before use.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "nameerror",
+        "defined"
+      ]
+    }
   },
   {
     "id": "docker-hub-pull",
@@ -42,7 +49,14 @@
       "postgres",
       "docker pull"
     ],
-    "rubric": "Reports `docker pull postgres:16` from hub.docker.com."
+    "rubric": "Reports `docker pull postgres:16` from hub.docker.com.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "docker pull",
+        "postgres"
+      ]
+    }
   },
   {
     "id": "find-bug-in-snippet",
@@ -67,7 +81,14 @@
       "int",
       "typeerror"
     ],
-    "rubric": "Identifies that string + int raises TypeError and suggests explicit conversion or type check."
+    "rubric": "Identifies that string + int raises TypeError and suggests explicit conversion or type check.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "typeerror",
+        "type"
+      ]
+    }
   },
   {
     "id": "git-clone-instructions",
@@ -90,7 +111,14 @@
       "git clone",
       "pip install"
     ],
-    "rubric": "Reports the correct clone URL and first three setup commands from the README."
+    "rubric": "Reports the correct clone URL and first three setup commands from the README.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "git clone",
+        "openai/whisper"
+      ]
+    }
   },
   {
     "id": "github-trending-python",
@@ -114,7 +142,14 @@
       "trending",
       "python"
     ],
-    "rubric": "Lists the top 3 trending Python repos from github.com/trending."
+    "rubric": "Lists the top 3 trending Python repos from github.com/trending.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "github",
+        "python"
+      ]
+    }
   },
   {
     "id": "good-first-issue-transcription-repo",
@@ -176,7 +211,13 @@
       "-A",
       "-o wide"
     ],
-    "rubric": "Reports `kubectl get pods -A -o wide` from the official kubectl docs."
+    "rubric": "Reports `kubectl get pods -A -o wide` from the official kubectl docs.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "kubectl get pods"
+      ]
+    }
   },
   {
     "id": "npm-package-readme",
@@ -199,7 +240,14 @@
       "install",
       "npm install"
     ],
-    "rubric": "Reports the correct `npm install axios` install command from the official source."
+    "rubric": "Reports the correct `npm install axios` install command from the official source.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "npm install",
+        "axios"
+      ]
+    }
   },
   {
     "id": "open-source-license",
@@ -221,7 +269,13 @@
       "microsoft/typescript",
       "apache"
     ],
-    "rubric": "Reports the Apache-2.0 license from the TypeScript LICENSE file."
+    "rubric": "Reports the Apache-2.0 license from the TypeScript LICENSE file.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "apache"
+      ]
+    }
   },
   {
     "id": "pypi-package-latest",
@@ -243,7 +297,14 @@
       "requests",
       "version"
     ],
-    "rubric": "Reports the latest requests version and supported Python versions."
+    "rubric": "Reports the latest requests version and supported Python versions.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "requests",
+        "pypi"
+      ]
+    }
   },
   {
     "id": "regex-email",
@@ -265,7 +326,11 @@
       "email",
       "@"
     ],
-    "rubric": "Reports a working email regex pattern from a reputable source."
+    "rubric": "Reports a working email regex pattern from a reputable source.",
+    "final_answer_check": {
+      "mode": "regex",
+      "value": "[\\w.+-]+@[\\w-]+\\.[\\w.-]+"
+    }
   },
   {
     "id": "rest-api-design",
@@ -287,7 +352,15 @@
       "GET",
       "/users/{username}/repos"
     ],
-    "rubric": "Reports `GET /users/{username}/repos` from docs.github.com."
+    "rubric": "Reports `GET /users/{username}/repos` from docs.github.com.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "get",
+        "/users",
+        "repos"
+      ]
+    }
   },
   {
     "id": "semver-meaning",
@@ -309,7 +382,15 @@
       "minor",
       "patch"
     ],
-    "rubric": "Quotes or paraphrases the SemVer spec for major/minor/patch."
+    "rubric": "Quotes or paraphrases the SemVer spec for major/minor/patch.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "major",
+        "minor",
+        "patch"
+      ]
+    }
   },
   {
     "id": "stackoverflow-top-question",
@@ -333,7 +414,14 @@
       "python",
       "votes"
     ],
-    "rubric": "Reports the top-voted Python SO question with score and tags."
+    "rubric": "Reports the top-voted Python SO question with score and tags.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "stackoverflow",
+        "python"
+      ]
+    }
   },
   {
     "id": "vscode-extension-install",
@@ -355,7 +443,14 @@
       "prettier",
       "code --install-extension"
     ],
-    "rubric": "Reports the marketplace listing and `code --install-extension` command."
+    "rubric": "Reports the marketplace listing and `code --install-extension` command.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "prettier",
+        "code --install-extension"
+      ]
+    }
   },
   {
     "id": "bookmark-manager",
@@ -378,7 +473,13 @@
       "bookmark",
       "self-hosted"
     ],
-    "rubric": "Reports a privacy-respecting bookmark manager from an HN discussion."
+    "rubric": "Reports a privacy-respecting bookmark manager from an HN discussion.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "bookmark"
+      ]
+    }
   },
   {
     "id": "cal-event-create",
@@ -404,7 +505,13 @@
       "project sync",
       "save"
     ],
-    "rubric": "Confirms a 'Project sync' event was scheduled for next Monday 14:00, 30 min."
+    "rubric": "Confirms a 'Project sync' event was scheduled for next Monday 14:00, 30 min.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "project sync"
+      ]
+    }
   },
   {
     "id": "drive-share-folder",
@@ -430,7 +537,14 @@
       "agentbench-k reports",
       "viewer"
     ],
-    "rubric": "Confirms folder 'AgentBench-K reports' exists with a viewer share."
+    "rubric": "Confirms folder 'AgentBench-K reports' exists with a viewer share.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "agentbench-k reports",
+        "viewer"
+      ]
+    }
   },
   {
     "id": "gmail-unsubscribe",
@@ -454,7 +568,13 @@
       "mail.google.com",
       "unsubscribe"
     ],
-    "rubric": "Confirms an unsubscribe was performed (not just delete) on a marketing email."
+    "rubric": "Confirms an unsubscribe was performed (not just delete) on a marketing email.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "unsubscrib"
+      ]
+    }
   },
   {
     "id": "notion-template",
@@ -478,7 +598,14 @@
       "okr",
       "template"
     ],
-    "rubric": "Reports a real, free, public Notion OKR template title and URL."
+    "rubric": "Reports a real, free, public Notion OKR template title and URL.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "notion",
+        "okr"
+      ]
+    }
   },
   {
     "id": "pdf-compress-tool",
@@ -504,7 +631,14 @@
       "local",
       "free"
     ],
-    "rubric": "Identifies a free, ideally local-processing PDF compression tool."
+    "rubric": "Identifies a free, ideally local-processing PDF compression tool.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "pdf",
+        "compress"
+      ]
+    }
   },
   {
     "id": "recipe-chicken-thighs",
@@ -529,7 +663,14 @@
       "chicken thighs",
       "30 minutes"
     ],
-    "rubric": "Real, 4.5+ star weeknight chicken thigh recipe under 30 min."
+    "rubric": "Real, 4.5+ star weeknight chicken thigh recipe under 30 min.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "chicken",
+        "minute"
+      ]
+    }
   },
   {
     "id": "standing-desk-under-300",
@@ -559,7 +700,14 @@
       "rating"
     ],
     "rubric": "Real standing desk converter under $300 with 4.5+ star average.",
-    "notes": "Example: Vari Electric Standing Desk Converter. Any product meeting all constraints passes."
+    "notes": "Example: Vari Electric Standing Desk Converter. Any product meeting all constraints passes.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "standing desk",
+        "converter"
+      ]
+    }
   },
   {
     "id": "translate-fr-en",
@@ -584,7 +732,14 @@
       "english",
       "research"
     ],
-    "rubric": "Produces the DeepL English translation of the French sentence."
+    "rubric": "Produces the DeepL English translation of the French sentence.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "research",
+        "artificial intelligence"
+      ]
+    }
   },
   {
     "id": "weather-week",
@@ -608,7 +763,14 @@
       "monday",
       "tuesday"
     ],
-    "rubric": "Reports a 7-day Paris forecast with daily highs/lows from a major weather site."
+    "rubric": "Reports a 7-day Paris forecast with daily highs/lows from a major weather site.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "paris",
+        "\u00b0"
+      ]
+    }
   },
   {
     "id": "agentbench-related",
@@ -630,7 +792,14 @@
       "2308.03688",
       "agentbench"
     ],
-    "rubric": "Lists AgentBench evaluation categories (web, code, game, etc.)."
+    "rubric": "Lists AgentBench evaluation categories (web, code, game, etc.).",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "agentbench",
+        "2308.03688"
+      ]
+    }
   },
   {
     "id": "diffusion-models-history",
@@ -652,7 +821,15 @@
       "2006.11239",
       "ho"
     ],
-    "rubric": "Reports Ho et al. 2020 DDPM paper and the ImageNet/CIFAR datasets."
+    "rubric": "Reports Ho et al. 2020 DDPM paper and the ImageNet/CIFAR datasets.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "ddpm",
+        "ho",
+        "2020"
+      ]
+    }
   },
   {
     "id": "gemini-1-5-report",
@@ -675,7 +852,14 @@
       "gemini",
       "1.5"
     ],
-    "rubric": "Reports Gemini 1.5's 1M (Pro) / 2M (Flash) token context window."
+    "rubric": "Reports Gemini 1.5's 1M (Pro) / 2M (Flash) token context window.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "gemini",
+        "context"
+      ]
+    }
   },
   {
     "id": "llama-3-paper",
@@ -699,7 +883,14 @@
       "8b",
       "70b"
     ],
-    "rubric": "Reports Llama 3 model sizes (8B/70B/405B), training tokens, and MMLU score."
+    "rubric": "Reports Llama 3 model sizes (8B/70B/405B), training tokens, and MMLU score.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "llama",
+        "70b"
+      ]
+    }
   },
   {
     "id": "mamba-paper",
@@ -721,7 +912,15 @@
       "2312.00752",
       "mamba"
     ],
-    "rubric": "Reports the Mamba paper (Gu & Dao 2023) and its selective SSM contribution."
+    "rubric": "Reports the Mamba paper (Gu & Dao 2023) and its selective SSM contribution.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "mamba",
+        "gu",
+        "dao"
+      ]
+    }
   },
   {
     "id": "mixture-of-experts-survey",
@@ -746,7 +945,15 @@
       "experts",
       "survey"
     ],
-    "rubric": "Identifies a real MoE survey paper and lists its main sections."
+    "rubric": "Identifies a real MoE survey paper and lists its main sections.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "mixture",
+        "experts",
+        "survey"
+      ]
+    }
   },
   {
     "id": "openai-o1-report",
@@ -768,7 +975,14 @@
       "o1",
       "system card"
     ],
-    "rubric": "Reports key o1 safety findings (jailbreak resistance, bio/chem evals)."
+    "rubric": "Reports key o1 safety findings (jailbreak resistance, bio/chem evals).",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "o1",
+        "system"
+      ]
+    }
   },
   {
     "id": "rags-original-paper",
@@ -790,7 +1004,15 @@
       "2005.11401",
       "lewis"
     ],
-    "rubric": "Identifies Lewis et al. 2020 RAG paper with title and authors."
+    "rubric": "Identifies Lewis et al. 2020 RAG paper with title and authors.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "rag",
+        "2020",
+        "lewis"
+      ]
+    }
   },
   {
     "id": "speech-recognition-benchmarks",
@@ -814,7 +1036,14 @@
       "license",
       "hours"
     ],
-    "rubric": "Compares LibriSpeech (read audio, public domain) vs Common Voice (crowdsourced, CC0) on size and license."
+    "rubric": "Compares LibriSpeech (read audio, public domain) vs Common Voice (crowdsourced, CC0) on size and license.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "librispeech",
+        "common voice"
+      ]
+    }
   },
   {
     "id": "three-asr-low-resource-papers",
@@ -879,7 +1108,14 @@
       "latte",
       "new york"
     ],
-    "rubric": "Reports NYC latte average in USD with a source."
+    "rubric": "Reports NYC latte average in USD with a source.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "latte",
+        "$"
+      ]
+    }
   },
   {
     "id": "bitcoin-price-now",
@@ -902,7 +1138,14 @@
       "BTC",
       "$"
     ],
-    "rubric": "Reports current BTC price in USD with a timestamp."
+    "rubric": "Reports current BTC price in USD with a timestamp.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "bitcoin",
+        "$"
+      ]
+    }
   },
   {
     "id": "ceo-of-nvidia",
@@ -923,7 +1166,14 @@
       "nvidia.com",
       "CEO"
     ],
-    "rubric": "Reports the current NVIDIA CEO's name and approximate start date."
+    "rubric": "Reports the current NVIDIA CEO's name and approximate start date.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "nvidia",
+        "ceo"
+      ]
+    }
   },
   {
     "id": "current-weather-sf",
@@ -946,7 +1196,14 @@
       "san francisco",
       "temperature"
     ],
-    "rubric": "Reports current SF temperature and conditions from a major weather site."
+    "rubric": "Reports current SF temperature and conditions from a major weather site.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "san francisco",
+        "\u00b0"
+      ]
+    }
   },
   {
     "id": "definition-rag",
@@ -969,7 +1226,14 @@
       "augmented",
       "generation"
     ],
-    "rubric": "Quotes or paraphrases a clear RAG definition and cites the source."
+    "rubric": "Quotes or paraphrases a clear RAG definition and cites the source.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "retrieval",
+        "augmented"
+      ]
+    }
   },
   {
     "id": "distance-earth-moon",
@@ -992,7 +1256,14 @@
       "moon",
       "km"
     ],
-    "rubric": "Reports Earth-Moon distance in km with a source."
+    "rubric": "Reports Earth-Moon distance in km with a source.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "km",
+        "moon"
+      ]
+    }
   },
   {
     "id": "hubble-telescope-launch",
@@ -1014,7 +1285,14 @@
       "1990",
       "hubble"
     ],
-    "rubric": "Reports the Hubble launch date (1990-04-24) with a source."
+    "rubric": "Reports the Hubble launch date (1990-04-24) with a source.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "1990",
+        "hubble"
+      ]
+    }
   },
   {
     "id": "iphone-latest-model",
@@ -1037,7 +1315,14 @@
       "iphone",
       "$"
     ],
-    "rubric": "Reports current flagship iPhone model and starting price from apple.com."
+    "rubric": "Reports current flagship iPhone model and starting price from apple.com.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "iphone",
+        "$"
+      ]
+    }
   },
   {
     "id": "python-latest-version",
@@ -1058,7 +1343,14 @@
       "python.org",
       "download"
     ],
-    "rubric": "Reports the latest stable Python version and release date."
+    "rubric": "Reports the latest stable Python version and release date.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "python",
+        "3."
+      ]
+    }
   },
   {
     "id": "stock-price-apple",
@@ -1081,7 +1373,14 @@
       "AAPL",
       "$"
     ],
-    "rubric": "Reports current AAPL price and as-of time from a financial site."
+    "rubric": "Reports current AAPL price and as-of time from a financial site.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "AAPL",
+        "$"
+      ]
+    }
   },
   {
     "id": "top-imdb-movie",
@@ -1103,7 +1402,14 @@
       "imdb.com",
       "top"
     ],
-    "rubric": "Reports current #1 IMDb Top 250 movie with year and rating."
+    "rubric": "Reports current #1 IMDb Top 250 movie with year and rating.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "imdb",
+        "top"
+      ]
+    }
   },
   {
     "id": "us-president-current",
@@ -1124,7 +1430,13 @@
       "whitehouse.gov",
       "president"
     ],
-    "rubric": "Reports the current US president and inauguration date from whitehouse.gov."
+    "rubric": "Reports the current US president and inauguration date from whitehouse.gov.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "president"
+      ]
+    }
   },
   {
     "id": "webb-telescope-first-image",
@@ -1146,7 +1458,14 @@
       "deep field",
       "2022"
     ],
-    "rubric": "Reports JWST's first deep field (SMACS 0723) and July 2022 release date."
+    "rubric": "Reports JWST's first deep field (SMACS 0723) and July 2022 release date.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "webb",
+        "deep field"
+      ]
+    }
   },
   {
     "id": "wikipedia-population-tokyo",
@@ -1203,7 +1522,28 @@
       "2026",
       "host"
     ],
-    "rubric": "Lists at least 10 of the 16 host cities for the 2026 World Cup."
+    "rubric": "Lists at least 10 of the 16 host cities for the 2026 World Cup.",
+    "final_answer_check": {
+      "mode": "contains_any",
+      "value": [
+        "atlanta",
+        "dallas",
+        "houston",
+        "kansas city",
+        "los angeles",
+        "miami",
+        "new york",
+        "philadelphia",
+        "san francisco",
+        "seattle",
+        "toronto",
+        "vancouver",
+        "monterrey",
+        "guadalajara",
+        "mexico city",
+        "boston"
+      ]
+    }
   },
   {
     "id": "4k-monitor-27in",
@@ -1229,7 +1569,14 @@
       "4k",
       "ips"
     ],
-    "rubric": "Real 27\" 4K IPS monitor under $450 with strong text-clarity rating."
+    "rubric": "Real 27\" 4K IPS monitor under $450 with strong text-clarity rating.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "monitor",
+        "4k"
+      ]
+    }
   },
   {
     "id": "air-purifier-large-room",
@@ -1254,7 +1601,14 @@
       "air purifier",
       "hepa"
     ],
-    "rubric": "Real air purifier rated 500+ sq ft, HEPA, under $250."
+    "rubric": "Real air purifier rated 500+ sq ft, HEPA, under $250.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "air purifier",
+        "sq ft"
+      ]
+    }
   },
   {
     "id": "cheap-nonstop-nyc-london",
@@ -1322,7 +1676,14 @@
       "4-slice",
       "toaster"
     ],
-    "rubric": "Real 4-slice toaster under $80 with 4.3+ star average."
+    "rubric": "Real 4-slice toaster under $80 with 4.3+ star average.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "toaster",
+        "4-slice"
+      ]
+    }
   },
   {
     "id": "espresso-machine-home",
@@ -1347,7 +1708,14 @@
       "espresso",
       "frother"
     ],
-    "rubric": "Real espresso machine under $500 with steam wand, 4+ stars."
+    "rubric": "Real espresso machine under $500 with steam wand, 4+ stars.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "espresso",
+        "steam"
+      ]
+    }
   },
   {
     "id": "gift-under-50-mom",
@@ -1372,7 +1740,13 @@
       "garden",
       "mother"
     ],
-    "rubric": "Real garden-themed gift for a mother under $50 with fast shipping."
+    "rubric": "Real garden-themed gift for a mother under $50 with fast shipping.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "garden"
+      ]
+    }
   },
   {
     "id": "laptop-stand-ergonomic",
@@ -1397,7 +1771,14 @@
       "laptop stand",
       "16"
     ],
-    "rubric": "Real ergonomic laptop stand under $80 that fits a 16-inch laptop."
+    "rubric": "Real ergonomic laptop stand under $80 that fits a 16-inch laptop.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "laptop",
+        "stand"
+      ]
+    }
   },
   {
     "id": "mechanical-keyboard-under-120",
@@ -1408,14 +1789,17 @@
     "constraints": [
       "Under $120",
       "Hot-swappable",
-      "Wireless (BT or 2.4GHz)"
+      "Wireless (BT or 2.4GHz)",
+      "Product must currently be purchasable"
     ],
     "start_url": "https://www.amazon.com/s?k=mechanical+keyboard+hot+swap+wireless",
     "expected_steps": [
       "navigate Amazon",
       "search mechanical keyboard hot swap wireless",
-      "apply price filter",
-      "verify specs on listing"
+      "apply price filter under 120",
+      "open product page",
+      "verify hot-swap and wireless in listing",
+      "extract price, brand, model"
     ],
     "critical_actions": [
       "amazon.com",
@@ -1423,7 +1807,17 @@
       "wireless",
       "$"
     ],
-    "rubric": "Real in-stock mechanical keyboard under $120 with hot-swap + wireless."
+    "final_answer": "Keychron K8 Pro, $114, hot-swappable, Bluetooth + 2.4GHz wireless",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "hot-swap",
+        "wireless",
+        "1"
+      ]
+    },
+    "rubric": "Identifies a real, in-stock mechanical keyboard under $120 with both hot-swap and wireless features.",
+    "notes": "Example: Keychron K8 Pro. Any equivalent product meeting all three constraints passes."
   },
   {
     "id": "noise-cancelling-headphones",
@@ -1447,7 +1841,15 @@
       "noise-cancelling",
       "wireless"
     ],
-    "rubric": "Highest-rated ANC wireless headphones under $300 from a review site."
+    "rubric": "Highest-rated ANC wireless headphones under $300 from a review site.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "headphone",
+        "noise-cancelling",
+        "wireless"
+      ]
+    }
   },
   {
     "id": "running-shoes-under-100",
@@ -1472,6 +1874,14 @@
       "running",
       "rating"
     ],
-    "rubric": "Real running shoes under $100 with a 4+ star rating from a major retailer."
+    "rubric": "Real running shoes under $100 with a 4+ star rating from a major retailer.",
+    "final_answer_check": {
+      "mode": "contains_all",
+      "value": [
+        "running",
+        "$",
+        "shoe"
+      ]
+    }
   }
 ]

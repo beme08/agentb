@@ -18,5 +18,13 @@
     "2005.11401",
     "lewis"
   ],
-  "rubric": "Identifies Lewis et al. 2020 RAG paper with title and authors."
+  "rubric": "Identifies Lewis et al. 2020 RAG paper with title and authors.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "rag",
+      "2020",
+      "lewis"
+    ]
+  }
 }

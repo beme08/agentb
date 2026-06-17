@@ -20,5 +20,12 @@
     "python",
     "votes"
   ],
-  "rubric": "Reports the top-voted Python SO question with score and tags."
+  "rubric": "Reports the top-voted Python SO question with score and tags.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "stackoverflow",
+      "python"
+    ]
+  }
 }

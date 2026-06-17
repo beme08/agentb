@@ -21,5 +21,12 @@
     "4-slice",
     "toaster"
   ],
-  "rubric": "Real 4-slice toaster under $80 with 4.3+ star average."
+  "rubric": "Real 4-slice toaster under $80 with 4.3+ star average.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "toaster",
+      "4-slice"
+    ]
+  }
 }

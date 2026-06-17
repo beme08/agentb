@@ -21,5 +21,13 @@
     "experts",
     "survey"
   ],
-  "rubric": "Identifies a real MoE survey paper and lists its main sections."
+  "rubric": "Identifies a real MoE survey paper and lists its main sections.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "mixture",
+      "experts",
+      "survey"
+    ]
+  }
 }

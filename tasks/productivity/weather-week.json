@@ -20,5 +20,12 @@
     "monday",
     "tuesday"
   ],
-  "rubric": "Reports a 7-day Paris forecast with daily highs/lows from a major weather site."
+  "rubric": "Reports a 7-day Paris forecast with daily highs/lows from a major weather site.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "paris",
+      "\u00b0"
+    ]
+  }
 }

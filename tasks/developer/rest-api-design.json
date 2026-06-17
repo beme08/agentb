@@ -18,5 +18,13 @@
     "GET",
     "/users/{username}/repos"
   ],
-  "rubric": "Reports `GET /users/{username}/repos` from docs.github.com."
+  "rubric": "Reports `GET /users/{username}/repos` from docs.github.com.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "get",
+      "/users",
+      "repos"
+    ]
+  }
 }

@@ -21,5 +21,13 @@
     "running",
     "rating"
   ],
-  "rubric": "Real running shoes under $100 with a 4+ star rating from a major retailer."
+  "rubric": "Real running shoes under $100 with a 4+ star rating from a major retailer.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "running",
+      "$",
+      "shoe"
+    ]
+  }
 }

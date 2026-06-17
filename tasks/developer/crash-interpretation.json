@@ -20,5 +20,12 @@
     "nameerror",
     "defined"
   ],
-  "rubric": "Diagnoses NameError as a missing definition/typo and suggests defining the name before use."
+  "rubric": "Diagnoses NameError as a missing definition/typo and suggests defining the name before use.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "nameerror",
+      "defined"
+    ]
+  }
 }

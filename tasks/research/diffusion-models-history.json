@@ -18,5 +18,13 @@
     "2006.11239",
     "ho"
   ],
-  "rubric": "Reports Ho et al. 2020 DDPM paper and the ImageNet/CIFAR datasets."
+  "rubric": "Reports Ho et al. 2020 DDPM paper and the ImageNet/CIFAR datasets.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "ddpm",
+      "ho",
+      "2020"
+    ]
+  }
 }

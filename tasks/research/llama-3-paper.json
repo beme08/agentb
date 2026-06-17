@@ -20,5 +20,12 @@
     "8b",
     "70b"
   ],
-  "rubric": "Reports Llama 3 model sizes (8B/70B/405B), training tokens, and MMLU score."
+  "rubric": "Reports Llama 3 model sizes (8B/70B/405B), training tokens, and MMLU score.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "llama",
+      "70b"
+    ]
+  }
 }

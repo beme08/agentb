@@ -21,5 +21,12 @@
     "int",
     "typeerror"
   ],
-  "rubric": "Identifies that string + int raises TypeError and suggests explicit conversion or type check."
+  "rubric": "Identifies that string + int raises TypeError and suggests explicit conversion or type check.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "typeerror",
+      "type"
+    ]
+  }
 }

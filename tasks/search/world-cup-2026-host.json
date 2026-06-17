@@ -19,5 +19,26 @@
     "2026",
     "host"
   ],
-  "rubric": "Lists at least 10 of the 16 host cities for the 2026 World Cup."
+  "rubric": "Lists at least 10 of the 16 host cities for the 2026 World Cup.",
+  "final_answer_check": {
+    "mode": "contains_any",
+    "value": [
+      "atlanta",
+      "dallas",
+      "houston",
+      "kansas city",
+      "los angeles",
+      "miami",
+      "new york",
+      "philadelphia",
+      "san francisco",
+      "seattle",
+      "toronto",
+      "vancouver",
+      "monterrey",
+      "guadalajara",
+      "mexico city",
+      "boston"
+    ]
+  }
 }

@@ -18,5 +18,11 @@
     "microsoft/typescript",
     "apache"
   ],
-  "rubric": "Reports the Apache-2.0 license from the TypeScript LICENSE file."
+  "rubric": "Reports the Apache-2.0 license from the TypeScript LICENSE file.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "apache"
+    ]
+  }
 }

@@ -18,5 +18,12 @@
     "imdb.com",
     "top"
   ],
-  "rubric": "Reports current #1 IMDb Top 250 movie with year and rating."
+  "rubric": "Reports current #1 IMDb Top 250 movie with year and rating.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "imdb",
+      "top"
+    ]
+  }
 }

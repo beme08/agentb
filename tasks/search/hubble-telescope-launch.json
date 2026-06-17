@@ -18,5 +18,12 @@
     "1990",
     "hubble"
   ],
-  "rubric": "Reports the Hubble launch date (1990-04-24) with a source."
+  "rubric": "Reports the Hubble launch date (1990-04-24) with a source.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "1990",
+      "hubble"
+    ]
+  }
 }

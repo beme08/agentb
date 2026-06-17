@@ -1,0 +1,10 @@
+services:
+  bench:
+    build: .
+    environment:
+      - OPENROUTER_API_KEY=${OPENROUTER_API_KEY:-}
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+    volumes:
+      - ./traces:/app/traces
+      - ./reports:/app/reports
+    command: ["--agent", "stub", "--all"]

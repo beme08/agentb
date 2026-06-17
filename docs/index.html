@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AgentBench-K</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; max-width: 760px; margin: 2rem auto; padding: 0 1rem; line-height: 1.55; color: #1a1a1a; }
+    h1 { font-size: 2rem; }
+    h2 { margin-top: 2.5rem; border-bottom: 1px solid #e5e5e5; padding-bottom: 0.3rem; }
+    table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+    th, td { border: 1px solid #e5e5e5; padding: 6px 10px; text-align: left; }
+    th { background: #f7f7f7; }
+    code { background: #f3f3f3; padding: 1px 4px; border-radius: 3px; font-size: 0.9em; }
+    pre { background: #f3f3f3; padding: 0.8rem; border-radius: 4px; overflow-x: auto; }
+    a { color: #0969da; }
+    .badge { display: inline-block; background: #eef; padding: 2px 8px; border-radius: 10px; font-size: 0.8em; margin-right: 4px; }
+  </style>
+</head>
+<body>
+  <h1>AgentBench-K</h1>
+  <p>
+    <span class="badge">v0.1</span>
+    A benchmark for evaluating open web agents on realistic knowledge-worker tasks.
+  </p>
+  <p>
+    <em>"How well can open models actually complete useful browser tasks?"</em>
+    &mdash; not "Can I invent AGI?"
+  </p>
+
+  <h2>What it is</h2>
+  <ul>
+    <li>60 tasks across <strong>search</strong>, <strong>shopping</strong>, <strong>research</strong>, <strong>productivity</strong>, and <strong>developer</strong> workflows.</li>
+    <li>A pluggable <code>Agent</code> interface &mdash; Browser-Use, OpenAI CUA, OpenRouter chat agents, or your own implementation.</li>
+    <li>Scoring: <code>0.4 * step_coverage + 0.4 * critical_actions + 0.2 * final_answer</code>, plus a built-in failure-type classifier.</li>
+    <li>Reference-answer evaluation with per-task page snapshots for reproducibility.</li>
+  </ul>
+
+  <h2>Quick start</h2>
+  <pre><code>git clone https://github.com/&lt;you&gt;/agentbench-k
+cd agentbench-k
+pip install -r requirements.txt
+python3 run_benchmark.py --agent stub --all
+python3 leaderboard/generate.py traces/results.json</code></pre>
+
+  <h2>Leaderboard</h2>
+  <p>See <a href="LEADERBOARD.md"><code>leaderboard/LEADERBOARD.md</code></a> for the latest run results.</p>
+
+  <h2>Report</h2>
+  <p>The full report is in <a href="REPORT.md"><code>REPORT.md</code></a>.</p>
+
+  <h2>Categories</h2>
+  <table>
+    <tr><th>Category</th><th>Tasks</th><th>Examples</th></tr>
+    <tr><td>search</td><td>15</td><td>Wikipedia, weather, prices, definitions</td></tr>
+    <tr><td>shopping</td><td>10</td><td>Flights, keyboards, headphones, espresso</td></tr>
+    <tr><td>research</td><td>10</td><td>ArXiv retrieval &amp; summarization</td></tr>
+    <tr><td>productivity</td><td>10</td><td>Calendar, Gmail, Drive, recipes, translation</td></tr>
+    <tr><td>developer</td><td>15</td><td>GitHub, npm, PyPI, Docker, kubectl, regex, errors</td></tr>
+  </table>
+
+  <h2>Failure taxonomy</h2>
+  <table>
+    <tr><th>Label</th><th>Trigger</th></tr>
+    <tr><td><code>constraint_failure</code></td><td>Missed a hard requirement (low <code>critical_actions</code>).</td></tr>
+    <tr><td><code>retrieval_failure</code></td><td>Got to the right area, didn't find the specific data point.</td></tr>
+    <tr><td><code>planning_failure</code></td><td>Wrong action sequence (low <code>steps</code>).</td></tr>
+    <tr><td><code>hallucination</code></td><td>Right steps, wrong final answer.</td></tr>
+    <tr><td><code>execution_failure</code></td><td>Partial coverage on multiple components.</td></tr>
+  </table>
+
+  <h2>Links</h2>
+  <ul>
+    <li><a href="https://github.com/&lt;you&gt;/agentbench-k">GitHub repository</a></li>
+    <li><a href="ROADMAP.md">Roadmap</a></li>
+    <li><a href="CONTRIBUTING.md">Contributing</a></li>
+  </ul>
+</body>
+</html>

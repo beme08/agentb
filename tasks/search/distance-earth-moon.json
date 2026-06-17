@@ -19,5 +19,12 @@
     "moon",
     "km"
   ],
-  "rubric": "Reports Earth-Moon distance in km with a source."
+  "rubric": "Reports Earth-Moon distance in km with a source.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "km",
+      "moon"
+    ]
+  }
 }

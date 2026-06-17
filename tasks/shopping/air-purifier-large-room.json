@@ -21,5 +21,12 @@
     "air purifier",
     "hepa"
   ],
-  "rubric": "Real air purifier rated 500+ sq ft, HEPA, under $250."
+  "rubric": "Real air purifier rated 500+ sq ft, HEPA, under $250.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "air purifier",
+      "sq ft"
+    ]
+  }
 }

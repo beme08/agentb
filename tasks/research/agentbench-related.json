@@ -18,5 +18,12 @@
     "2308.03688",
     "agentbench"
   ],
-  "rubric": "Lists AgentBench evaluation categories (web, code, game, etc.)."
+  "rubric": "Lists AgentBench evaluation categories (web, code, game, etc.).",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "agentbench",
+      "2308.03688"
+    ]
+  }
 }

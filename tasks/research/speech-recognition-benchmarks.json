@@ -20,5 +20,12 @@
     "license",
     "hours"
   ],
-  "rubric": "Compares LibriSpeech (read audio, public domain) vs Common Voice (crowdsourced, CC0) on size and license."
+  "rubric": "Compares LibriSpeech (read audio, public domain) vs Common Voice (crowdsourced, CC0) on size and license.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "librispeech",
+      "common voice"
+    ]
+  }
 }

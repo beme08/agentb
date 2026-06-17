@@ -19,5 +19,12 @@
     "gemini",
     "1.5"
   ],
-  "rubric": "Reports Gemini 1.5's 1M (Pro) / 2M (Flash) token context window."
+  "rubric": "Reports Gemini 1.5's 1M (Pro) / 2M (Flash) token context window.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "gemini",
+      "context"
+    ]
+  }
 }

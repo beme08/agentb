@@ -19,5 +19,12 @@
     "san francisco",
     "temperature"
   ],
-  "rubric": "Reports current SF temperature and conditions from a major weather site."
+  "rubric": "Reports current SF temperature and conditions from a major weather site.",
+  "final_answer_check": {
+    "mode": "contains_all",
+    "value": [
+      "san francisco",
+      "\u00b0"
+    ]
+  }
 }

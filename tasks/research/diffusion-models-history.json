@@ -26,5 +26,6 @@
       "ho",
       "2020"
     ]
-  }
+  },
+  "final_answer": "Ho, J., Jain, A., and Abbeel, P. (2020). 'Denoising Diffusion Probabilistic Models.' arXiv:2006.11239 (NeurIPS 2020). Trained on CIFAR-10, LSUN, and ImageNet 256\u00d7256; achieves FID 3.17 on ImageNet, comparable to SOTA GANs at the time."
 }

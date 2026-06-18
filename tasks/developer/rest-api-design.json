@@ -26,5 +26,6 @@
       "/users",
       "repos"
     ]
-  }
+  },
+  "final_answer": "GitHub REST endpoint to list a user's public repositories:\n  GET /users/{username}/repos\nExample: GET https://api.github.com/users/torvalds/repos\n(Source: docs.github.com/en/rest/repos/repos.)"
 }

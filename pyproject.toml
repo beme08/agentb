@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentbench-k"
+version = "0.2.0"
+description = "A benchmark for evaluating open web agents on realistic knowledge-worker tasks."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "AgentBench-K contributors"}]
+keywords = ["benchmark", "agents", "llm", "evaluation", "web-agents"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+dependencies = []
+
+[project.optional-dependencies]
+openai = ["openai>=1.0"]
+validate = ["jsonschema>=4.0"]
+dev = [
+    "pytest>=7.0",
+    "ruff>=0.4",
+    "build>=1.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/agentbench-k/agentbench-k"
+Issues = "https://github.com/agentbench-k/agentbench-k/issues"
+Changelog = "https://github.com/agentbench-k/agentbench-k/blob/main/CHANGELOG.md"
+
+[project.scripts]
+agentbench-k = "run_benchmark:main"
+
+[tool.setuptools]
+py-modules = ["run_benchmark"]
+packages = ["agents", "agents.stub", "agents.openrouter", "evaluators", "evaluators.checks", "tasks"]
+
+[tool.setuptools.package-data]
+"tasks" = ["*.json", "**/*.json"]

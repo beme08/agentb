@@ -13,14 +13,13 @@ from __future__ import annotations
 
 import argparse
 import json
+import sys
 import time
 import urllib.request
 from pathlib import Path
 
-import sys
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from tasks import iter_tasks, load_task
-
 
 SNAPSHOT_ROOT = Path("traces/snapshots")
 USER_AGENT = "AgentBench-K/0.1 (research; +https://github.com/agentbench-k)"

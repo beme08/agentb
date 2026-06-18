@@ -25,5 +25,6 @@
       "prettier",
       "code --install-extension"
     ]
-  }
+  },
+  "final_answer": "Prettier \u2013 Code formatter (esbenp.prettier-vscode) on marketplace.\nInstall via CLI: `code --install-extension esbenp.prettier-vscode`."
 }

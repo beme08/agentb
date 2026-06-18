@@ -26,5 +26,6 @@
       "minor",
       "patch"
     ]
-  }
+  },
+  "final_answer": "SemVer (semver.org) rules:\n  MAJOR version: incompatible API changes,\n  MINOR version: new backward-compatible functionality,\n  PATCH version: backward-compatible bug fixes."
 }

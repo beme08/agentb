@@ -24,5 +24,6 @@
       "docker pull",
       "postgres"
     ]
-  }
+  },
+  "final_answer": "Official Docker pull command (hub.docker.com/_/postgres):\n  `docker pull postgres:16`\nOr run directly: `docker run -d --name pg -e POSTGRES_PASSWORD=... -p 5432:5432 postgres:16`"
 }

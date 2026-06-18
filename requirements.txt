@@ -1,9 +1,15 @@
 # Core
-pytest>=7.0
-jsonschema>=4.0
-
-# Real agents (install only the ones you need)
-openai>=1.0            # OpenRouter + OpenAI CUA
-# browser-use>=0.1
-# playwright>=1.40
-# langchain-openai>=0.1
+# --------
+# AgentBench-K itself has no runtime dependencies. The two shipped agents
+# (stub and openrouter) only need:
+#
+#   - Python 3.10+ standard library
+#   - For OpenRouterAgent: openai>=1.0  →  pip install agentbench-k[openai]
+#
+# Optional extras:
+#
+#   pip install agentbench-k[validate]   # for scripts/validate_tasks.py
+#   pip install agentbench-k[dev]       # for pytest + ruff
+#
+# Heavy browser-using agents (Browser-Use, OpenAI CUA) are out of scope
+# for this release; see docs/PLANNED_AGENTS.md.

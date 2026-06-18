@@ -29,5 +29,6 @@
       "pdf",
       "compress"
     ]
-  }
+  },
+  "final_answer": "Free local-processing PDF compressor: PDFsam Basic (desktop, open source, AGPL) or Stirling-PDF (self-hosted web UI). Avoids uploading to remote servers. Browser-based: Smallpdf's desktop app processes locally."
 }

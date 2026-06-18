@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use AgentBench-K in your research, please cite it as below."
+type: software
+title: "AgentBench-K"
+version: "0.2.0"
+date-released: 2026-06-18
+license: MIT
+authors:
+  - name: "AgentBench-K contributors"
+keywords:
+  - benchmark
+  - agents
+  - llm
+  - web-agents
+  - evaluation
+  - open-source
+abstract: >-
+  A 60-task benchmark for evaluating open web agents on realistic
+  knowledge-worker tasks. Provides a pluggable agent interface, a weighted
+  scoring rubric with a built-in failure-type classifier, and a reproducible
+  Docker-based runner.
+repository-code: "https://github.com/agentbench-k/agentbench-k"
+url: "https://github.com/agentbench-k/agentbench-k"

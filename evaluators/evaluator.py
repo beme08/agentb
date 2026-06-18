@@ -1,10 +1,10 @@
 """Combine individual checks into a single 0..1 score per task."""
 from __future__ import annotations
 
-from dataclasses import dataclass, field, asdict
+from dataclasses import asdict, dataclass, field
 from typing import Any
 
-from .checks import step_coverage, critical_action_compliance, final_answer_score
+from .checks import critical_action_compliance, final_answer_score, step_coverage
 
 
 @dataclass

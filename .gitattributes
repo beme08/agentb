@@ -1,0 +1,15 @@
+* text=auto eol=lf
+
+# Markdown
+*.md text diff=markdown
+
+# JSON
+*.json linguist-detectable=true
+*.json diff=json
+
+# Python
+*.py text diff=python
+
+# Snapshots are large binaries; don't diff them
+traces/snapshots/*.html binary
+traces/snapshots/*.json -diff

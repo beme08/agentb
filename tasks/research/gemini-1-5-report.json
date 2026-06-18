@@ -26,5 +26,6 @@
       "gemini",
       "context"
     ]
-  }
+  },
+  "final_answer": "Gemini Team, Google (2024). 'Gemini 1.5: Unlocking Multimodal Understanding Across Millions of Tokens of Context.' arXiv:2403.05530. Gemini 1.5 Pro supports a 1M-token context window (with 2M in preview for 1.5 Flash), the longest of any production model at release."
 }

@@ -27,5 +27,6 @@
       "llama",
       "70b"
     ]
-  }
+  },
+  "final_answer": "Dubey, A. et al. (2024). 'The Llama 3 Herd of Models.' arXiv:2407.21783. Released 8B and 70B chat models trained on 15.6T tokens, plus the larger 405B. Llama 3 70B scores 86.0 on MMLU (5-shot) per the report."
 }

@@ -29,5 +29,6 @@
       "experts",
       "survey"
     ]
-  }
+  },
+  "final_answer": "Recent MoE survey: 'A Survey on Mixture of Experts' (arXiv:2407.06204, 2024). Sections: (1) MoE fundamentals, (2) routing mechanisms, (3) training and inference, (4) applications to LLM and multimodal, (5) open problems."
 }

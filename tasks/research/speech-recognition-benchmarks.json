@@ -27,5 +27,6 @@
       "librispeech",
       "common voice"
     ]
-  }
+  },
+  "final_answer": "LibriSpeech (Panayotov et al., 2015): ~1,000 hours of read English audio from public-domain audiobooks (LibriVox). License: CC BY 4.0 for annotations, public domain for audio.\nCommon Voice (Mozilla): crowdsourced multilingual speech, ~30,000+ hours across 100+ languages by 2024. License: CC0.\nDifferences: LibriSpeech = read speech, single language, audio is public domain. Common Voice = read + spontaneous, 100+ languages, CC0 across the board."
 }

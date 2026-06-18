@@ -27,5 +27,6 @@
       "nameerror",
       "defined"
     ]
-  }
+  },
+  "final_answer": "Diagnosis: `NameError: name 'x' is not defined` at line 5 means the script references a variable `x` that was never assigned, or references it before its assignment. Common causes: typo, missing `global x` declaration inside a function, or `x` defined inside a branch/scope that line 5 doesn't see.\nFix: define `x` before line 5, check spelling, or import the name if it was meant to come from another module."
 }

@@ -26,5 +26,6 @@
       "retrieval",
       "augmented"
     ]
-  }
+  },
+  "final_answer": "Retrieval-Augmented Generation (RAG) is a generation approach that conditions a sequence-to-sequence model on documents retrieved from an external corpus at inference time, so the model's output is grounded in up-to-date or domain-specific knowledge. Original paper: Lewis et al., 2020 (arXiv:2005.11401)."
 }

@@ -24,5 +24,6 @@
     "value": [
       "apache"
     ]
-  }
+  },
+  "final_answer": "License of microsoft/TypeScript: Apache License 2.0 (LICENSE file at github.com/microsoft/TypeScript/blob/main/LICENSE)."
 }

@@ -26,5 +26,6 @@
       "git clone",
       "openai/whisper"
     ]
-  }
+  },
+  "final_answer": "HTTPS clone URL: https://github.com/openai/whisper.git\nFirst three setup steps from the README:\n  1. `git clone https://github.com/openai/whisper.git`\n  2. `cd whisper && pip install -e .`\n  3. `whisper path/to/audio.mp3` (CLI) or `import whisper` (Python API)"
 }

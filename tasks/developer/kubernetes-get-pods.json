@@ -25,5 +25,6 @@
     "value": [
       "kubectl get pods"
     ]
-  }
+  },
+  "final_answer": "kubectl command to list all pods in all namespaces with their node names: `kubectl get pods -A -o wide`. (Source: kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#get.)"
 }

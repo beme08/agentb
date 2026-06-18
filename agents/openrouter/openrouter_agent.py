@@ -10,8 +10,9 @@ tool pair, NOT a full browser-use loop. It scores on tasks where the
 information is one or two hops away (search/research) and acts as a
 realistic upper bound for the no-browser baseline.
 
-For tasks that need real browser interaction, use `BrowserUseAgent` or
-`OpenAICuaAgent` instead.
+For tasks that need real browser interaction (filtering, multi-step form
+filling), see docs/PLANNED_AGENTS.md for the design of browser-based agents
+that are out of scope for this initial release.
 """
 from __future__ import annotations
 
@@ -20,8 +21,7 @@ import os
 import time
 from typing import Any
 
-from ..base import Agent, AgentResult, Trace, Step
-
+from ..base import Agent, AgentResult, Step, Trace
 
 WEB_TOOLS = [
     {

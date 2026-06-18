@@ -25,5 +25,6 @@
       "o1",
       "system"
     ]
-  }
+  },
+  "final_answer": "OpenAI (2024). 'OpenAI o1 System Card.' Key safety findings: (1) o1 substantially outperforms GPT-4o on internal bio/chem captcha-style evals, (2) jailbreak robustness improved via chain-of-thought monitoring, (3) deliberate 'deliberative alignment' reduces reward hacking in long-horizon tasks."
 }

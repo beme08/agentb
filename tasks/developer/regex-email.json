@@ -22,5 +22,6 @@
   "final_answer_check": {
     "mode": "regex",
     "value": "[\\w.+-]+@[\\w-]+\\.[\\w.-]+"
-  }
+  },
+  "final_answer": "Commonly-recommended simple email regex (Stack Overflow top answer, OWASP):\n  ^[\\w.+-]+@[\\w-]+\\.[\\w.-]+$\nMatches the vast majority of real-world addresses without trying to implement the full RFC 5322 grammar."
 }

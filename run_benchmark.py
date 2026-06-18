@@ -4,7 +4,6 @@ Usage:
     python run_benchmark.py --agent stub --category search
     python run_benchmark.py --agent stub --task wikipedia-population-tokyo
     python run_benchmark.py --agent stub --all
-    python run_benchmark.py --agent openrouter --model openai/gpt-4o-mini --all
     python run_benchmark.py --agent openrouter --model anthropic/claude-3.5-sonnet --all
 """
 from __future__ import annotations
@@ -14,22 +13,16 @@ import json
 import time
 from pathlib import Path
 
-from tasks import iter_tasks, load_task
-from evaluators import evaluate
-from agents.base import Trace, AgentResult
-from agents.stub import StubAgent
-from agents.browser_use import BrowserUseAgent
-from agents.openai_cua import OpenAICuaAgent
+from agents.base import AgentResult, Trace
 from agents.openrouter import OpenRouterAgent
+from agents.stub import StubAgent
+from evaluators import evaluate
+from tasks import iter_tasks, load_task
 
 
 def _build_agent(name: str, model: str | None):
     if name == "stub":
         return StubAgent()
-    if name == "browser-use":
-        return BrowserUseAgent(model=model or "gpt-4o")
-    if name == "openai-cua":
-        return OpenAICuaAgent(model=model or "computer-use-preview")
     if name == "openrouter":
         return OpenRouterAgent(model=model or "openai/gpt-4o-mini")
     raise SystemExit(f"unknown agent: {name}")
@@ -47,8 +40,8 @@ def select_tasks(args) -> list[dict]:
 
 def main() -> None:
     p = argparse.ArgumentParser()
-    p.add_argument("--agent", required=True, choices=["stub", "browser-use", "openai-cua", "openrouter"])
-    p.add_argument("--model", default=None, help="Model id (for openrouter or browser-use)")
+    p.add_argument("--agent", required=True, choices=["stub", "openrouter"])
+    p.add_argument("--model", default=None, help="Model id (for openrouter)")
     p.add_argument("--category")
     p.add_argument("--task")
     p.add_argument("--all", action="store_true")

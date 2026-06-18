@@ -20,7 +20,6 @@ except ImportError:
 
 from tasks import iter_tasks
 
-
 SCHEMA = json.loads((ROOT / "tasks" / "schema.json").read_text())
 
 

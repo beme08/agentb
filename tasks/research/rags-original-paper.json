@@ -26,5 +26,6 @@
       "2020",
       "lewis"
     ]
-  }
+  },
+  "final_answer": "Lewis, P., et al. (2020). 'Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.' arXiv:2005.11401. Introduces RAG, a general-purpose fine-tuning recipe that pre-trains a BART generator with a neural retriever over Wikipedia."
 }

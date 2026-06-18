@@ -25,5 +25,6 @@
     "value": [
       "bookmark"
     ]
-  }
+  },
+  "final_answer": "Privacy-respecting bookmark manager: Linkwarden (self-hosted, AGPL) \u2014 recommended in HN threads as a Pinboard alternative. End-to-end encryption available. Backup option: Shaarli (single-user, PHP)."
 }

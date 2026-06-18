@@ -2,9 +2,7 @@
 import json
 from pathlib import Path
 
-import pytest
-
-from agents.base import Trace, Step
+from agents.base import Step, Trace
 from evaluators import evaluate
 from tasks import load_task, tasks_by_category
 

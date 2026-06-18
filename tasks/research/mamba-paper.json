@@ -26,5 +26,6 @@
       "gu",
       "dao"
     ]
-  }
+  },
+  "final_answer": "Gu, A. and Dao, T. (2023). 'Mamba: Linear-Time Sequence Modeling with Selective State Spaces.' arXiv:2312.00752. Introduces selective state-space models that match or exceed Transformers on language modeling while scaling linearly in sequence length."
 }

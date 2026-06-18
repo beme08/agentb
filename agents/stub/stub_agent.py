@@ -5,7 +5,7 @@ evaluator and benchmark loop be exercised end-to-end without hitting the web.
 """
 from __future__ import annotations
 
-from ..base import Agent, AgentResult, Trace, Step
+from ..base import Agent, AgentResult, Step, Trace
 
 
 class StubAgent(Agent):

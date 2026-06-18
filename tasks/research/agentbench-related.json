@@ -25,5 +25,6 @@
       "agentbench",
       "2308.03688"
     ]
-  }
+  },
+  "final_answer": "Liu, X. et al. (2023). 'AgentBench: Evaluating LLMs as Agents.' arXiv:2308.03688. Eight environments across web, code, game, knowledge-graph, OS, database, shopping, and trading; finds GPT-4 outperforms open models by a large margin."
 }

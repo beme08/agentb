@@ -65,9 +65,9 @@ def analyze(path: str) -> None:
         mean = sum(r["score"] for r in rs) / len(rs)
         if cost > 0:
             eff = mean / cost
-            print(f"- {a}: {eff:.1f} acc/$ on \${cost:.4f} total")
+            print(rf"- {a}: {eff:.1f} acc/$ on \${cost:.4f} total")
         else:
-            print(f"- {a}: \${cost:.4f} total (no cost data)")
+            print(rf"- {a}: \${cost:.4f} total (no cost data)")
 
     # Token efficiency
     print("\n## Token efficiency (accuracy per 1k tokens)\n")

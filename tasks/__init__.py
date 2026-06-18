@@ -1,8 +1,7 @@
 """Task loading utilities."""
-from pathlib import Path
 import json
-from typing import Iterator, Union
-
+from collections.abc import Iterator
+from pathlib import Path
 
 TASKS_ROOT = Path(__file__).parent
 

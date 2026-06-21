@@ -7,3 +7,8 @@ venv/
 traces/*.json
 !traces/.gitkeep
 .DS_Store
+
+# Local-only work artifacts
+examples/portfolio-site/
+.venv*/
+*.local/

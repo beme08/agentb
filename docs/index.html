@@ -20,7 +20,7 @@
 <body>
   <h1>AgentBench-K</h1>
   <p>
-    <span class="badge">v0.1</span>
+    <span class="badge">v0.2</span>
     A benchmark for evaluating open web agents on realistic knowledge-worker tasks.
   </p>
   <p>
@@ -31,7 +31,7 @@
   <h2>What it is</h2>
   <ul>
     <li>60 tasks across <strong>search</strong>, <strong>shopping</strong>, <strong>research</strong>, <strong>productivity</strong>, and <strong>developer</strong> workflows.</li>
-    <li>A pluggable <code>Agent</code> interface &mdash; Browser-Use, OpenAI CUA, OpenRouter chat agents, or your own implementation.</li>
+    <li>A pluggable <code>Agent</code> interface &mdash; shipped with <code>stub</code> and <code>openrouter</code> agents; bring your own by subclassing <code>agents.base.Agent</code>.</li>
     <li>Scoring: <code>0.4 * step_coverage + 0.4 * critical_actions + 0.2 * final_answer</code>, plus a built-in failure-type classifier.</li>
     <li>Reference-answer evaluation with per-task page snapshots for reproducibility.</li>
   </ul>
@@ -39,7 +39,7 @@
   <h2>Quick start</h2>
   <pre><code>git clone https://github.com/&lt;you&gt;/agentbench-k
 cd agentbench-k
-pip install -r requirements.txt
+pip install -e .[dev,validate]
 python3 run_benchmark.py --agent stub --all
 python3 leaderboard/generate.py traces/results.json</code></pre>
 
@@ -74,6 +74,8 @@ python3 leaderboard/generate.py traces/results.json</code></pre>
     <li><a href="https://github.com/&lt;you&gt;/agentbench-k">GitHub repository</a></li>
     <li><a href="ROADMAP.md">Roadmap</a></li>
     <li><a href="CONTRIBUTING.md">Contributing</a></li>
+    <li><a href="../CHANGELOG.md">Changelog</a></li>
+    <li><a href="../CITATION.cff">Cite</a></li>
   </ul>
 </body>
 </html>

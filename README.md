@@ -112,6 +112,13 @@ See [`tasks/schema.json`](tasks/schema.json). Each task is a single JSON file un
 
 **About the `final_answer` field:** every task carries a `final_answer` string that represents what a knowledgeable human would write. This is **illustrative, not ground truth** — the authoritative grader is `final_answer_check`. If you add a new task, write a specimen `final_answer` matching the needles in `final_answer_check.value`; if the real-world answer drifts, the check still catches the right thing.
 
+## Running against a local model server
+
+agentB works with any OpenAI-compatible endpoint. omlx, LM Studio,
+llama.cpp, vLLM, and Ollama are all fine targets — see
+[`docs/LOCAL_INFERENCE.md`](docs/LOCAL_INFERENCE.md) for the 5-line
+subclass pattern.
+
 ## Adding a new agent
 
 Subclass `agents.base.Agent` and implement `run(self, task) -> AgentResult`. Register the agent in `run_benchmark.py:_build_agent` and add it to the `--agent` choices list.

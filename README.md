@@ -1,6 +1,6 @@
-# AgentBench-K
+# agentB
 
-[![CI](https://github.com/agentbench-k/agentbench-k/actions/workflows/benchmark.yml/badge.svg)](https://github.com/agentbench-k/agentbench-k/actions/workflows/benchmark.yml)
+[![CI](https://github.com/beme08/agentb/actions/workflows/benchmark.yml/badge.svg)](https://github.com/beme08/agentb/actions/workflows/benchmark.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![Status: v0.2](https://img.shields.io/badge/status-v0.2-blueviolet.svg)](CHANGELOG.md)
@@ -10,7 +10,7 @@
 > "How well can open models actually complete useful browser tasks?"
 > — not "Can I invent AGI?"
 
-AgentBench-K is a 60-task benchmark spanning search, shopping, research, productivity, and developer workflows. Each task ships with a starting URL, expected step sequence, critical actions, and a rubric. A pluggable `Agent` interface lets you swap in any chat-completion model via OpenRouter.
+agentB is a 60-task benchmark spanning search, shopping, research, productivity, and developer workflows. Each task ships with a starting URL, expected step sequence, critical actions, and a rubric. A pluggable `Agent` interface lets you swap in any chat-completion model via OpenRouter.
 
 ## Quick start
 
@@ -40,7 +40,7 @@ python3 run_benchmark.py --agent openrouter --model anthropic/claude-3.5-sonnet 
 Or via the console script (after `pip install -e .`):
 
 ```bash
-agentbench-k --agent stub --all
+agentb --agent stub --all
 ```
 
 Or via the Makefile:
@@ -140,11 +140,11 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md) for the full guide.
 ## How to cite
 
 ```bibtex
-@software{agentbench_k_2026,
-  title  = {AgentBench-K: A Benchmark for Evaluating Open Web Agents on Realistic Knowledge Work},
+@software{agentb_2026,
+  title  = {agentB: A Benchmark for Evaluating Open Web Agents on Realistic Knowledge Work},
   version = {0.2.0},
   year   = {2026},
-  url    = {https://github.com/agentbench-k/agentbench-k},
+  url    = {https://github.com/beme08/agentb},
 }
 ```
 

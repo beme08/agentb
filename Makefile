@@ -1,7 +1,7 @@
 .PHONY: help install test lint bench-stub bench-model leaderboard snapshot validate clean
 
 help:
-	@echo "AgentBench-K make targets:"
+	@echo "agentB make targets:"
 	@echo "  install         pip install -e .[dev,validate,openai]"
 	@echo "  test            run pytest"
 	@echo "  lint            run ruff check"

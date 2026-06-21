@@ -39,4 +39,4 @@ We do not currently:
 - Prompt-injection attacks against the agent under test. Those are part of
   what we're benchmarking.
 
-[adv]: https://github.com/agentbench-k/agentbench-k/security/advisories/new
+[adv]: https://github.com/beme08/agentb/security/advisories/new

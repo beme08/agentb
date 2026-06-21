@@ -1,4 +1,4 @@
-"""Agent interface for AgentBench-K.
+"""Agent interface for agentB.
 
 All agents must implement `run(task) -> AgentResult` so the evaluator and
 benchmark runner are agent-agnostic.

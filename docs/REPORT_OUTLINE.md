@@ -1,6 +1,6 @@
 # Report Outline
 
-Working title: **AgentBench-K: Evaluating Open Web Agents on Realistic Knowledge Work**
+Working title: **agentB: Evaluating Open Web Agents on Realistic Knowledge Work**
 
 ## 1. Motivation
 

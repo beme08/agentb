@@ -1,4 +1,4 @@
-# AgentBench-K: Evaluating Open Web Agents on Realistic Knowledge Work
+# agentB: Evaluating Open Web Agents on Realistic Knowledge Work
 
 **A 60-task benchmark for measuring how well open models complete useful browser tasks.**
 
@@ -231,7 +231,7 @@ python3 run_benchmark.py --agent stub --task my-new-task
 ## Appendix C — Repository layout
 
 ```
-agentbench-k/
+agentb/
 ├── agents/                 # Pluggable agent implementations
 │   ├── base.py             #   Agent ABC + Trace/Step/AgentResult
 │   ├── stub/               #   Synthetic trace for tests

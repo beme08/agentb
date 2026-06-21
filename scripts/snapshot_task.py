@@ -1,6 +1,6 @@
 """Capture a webpage snapshot for a task.
 
-This is the reproducibility anchor for AgentBench-K. Each task's `start_url`
+This is the reproducibility anchor for agentB. Each task's `start_url`
 gets fetched once and saved to `traces/snapshots/<task_id>.html` along with
 metadata. Graders can then compare what the agent saw against the snapshot
 at task-creation time.
@@ -22,7 +22,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from tasks import iter_tasks, load_task
 
 SNAPSHOT_ROOT = Path("traces/snapshots")
-USER_AGENT = "AgentBench-K/0.1 (research; +https://github.com/agentbench-k)"
+USER_AGENT = "agentB/0.1 (research; +https://github.com/beme08)"
 
 
 def capture(task: dict) -> dict:

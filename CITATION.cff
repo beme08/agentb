@@ -1,12 +1,12 @@
 cff-version: 1.2.0
-message: "If you use AgentBench-K in your research, please cite it as below."
+message: "If you use agentB in your research, please cite it as below."
 type: software
-title: "AgentBench-K"
+title: "agentB"
 version: "0.2.0"
 date-released: 2026-06-18
 license: MIT
 authors:
-  - name: "AgentBench-K contributors"
+  - name: "agentB contributors"
 keywords:
   - benchmark
   - agents
@@ -19,5 +19,5 @@ abstract: >-
   knowledge-worker tasks. Provides a pluggable agent interface, a weighted
   scoring rubric with a built-in failure-type classifier, and a reproducible
   Docker-based runner.
-repository-code: "https://github.com/agentbench-k/agentbench-k"
-url: "https://github.com/agentbench-k/agentbench-k"
+repository-code: "https://github.com/beme08/agentb"
+url: "https://github.com/beme08/agentb"

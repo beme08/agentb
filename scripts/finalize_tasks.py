@@ -194,7 +194,7 @@ ANSWERS: dict[str, str] = {
         "Email remains in the inbox; deletion is a separate step."
     ),
     "drive-share-folder": (
-        "Created folder 'AgentBench-K reports' in Drive root, shared with "
+        "Created folder 'agentB reports' in Drive root, shared with "
         "the requested email at Viewer permission. Share link: "
         "https://drive.google.com/drive/folders/<id>."
     ),

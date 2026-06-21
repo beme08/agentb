@@ -1,6 +1,6 @@
 # Examples
 
-Small, runnable examples that exercise AgentBench-K from a Python script.
+Small, runnable examples that exercise agentB from a Python script.
 
 ## quickstart.py
 

@@ -16,7 +16,7 @@ def main(path: str) -> None:
     for r in rows:
         by_agent[r["agent"]].append(r)
 
-    print("# AgentBench-K Leaderboard\n")
+    print("# agentB Leaderboard\n")
     print(f"Tasks evaluated: {len(rows)}\n")
     print("| Agent | Mean score | Perfect (1.0) | Mean latency (s) | Total cost (USD) |")
     print("| --- | --- | --- | --- | --- |")

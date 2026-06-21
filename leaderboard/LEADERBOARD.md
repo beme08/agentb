@@ -1,4 +1,4 @@
-# AgentBench-K Leaderboard
+# agentB Leaderboard
 
 Tasks evaluated: 60
 

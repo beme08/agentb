@@ -4,7 +4,7 @@
 
 Packaging
 - `LICENSE` (MIT) added.
-- `pyproject.toml` with `[project]` metadata, optional-dependency groups (`openai`, `validate`, `dev`), and a `console_scripts` entry point `agentbench-k = run_benchmark:main`.
+- `pyproject.toml` with `[project]` metadata, optional-dependency groups (`openai`, `validate`, `dev`), and a `console_scripts` entry point `agentb = run_benchmark:main`.
 - `Makefile` with `install`, `test`, `lint`, `validate`, `bench-stub`, `bench-model MODEL=<id>`, `leaderboard`, `snapshot`, `clean`.
 - `ruff.toml` (line-length 100, target py310, rules E/F/W/I/B/UP).
 - `requirements.txt` rewritten to point at the optional-dependency groups.
